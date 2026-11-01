@@ -187,3 +187,6 @@
   .welcome-message{font-size:15px;line-height:1.9}
   .welcome-symbol{width:58px;height:58px;font-size:34px}
 }
+
+.menu-link:disabled{opacity:.48;cursor:not-allowed;transform:none;background:#f7f9fa}
+.menu-link:disabled:hover{border-color:#e3edf1;transform:none}
