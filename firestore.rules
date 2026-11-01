@@ -8,7 +8,7 @@ service cloud.firestore {
     // Replace this placeholder with the owner's Firebase Authentication UID.
     // Until then, no account has administrative privileges.
     function isOwner() {
-      return signedIn() && request.auth.uid == "REPLACE_WITH_OWNER_UID";
+      return signedIn() && request.auth.uid == "VELqTJteQHegrYHhFHSzDYTxLNh2";
     }
 
     match /users/{userId} {
