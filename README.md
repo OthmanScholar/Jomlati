@@ -29,3 +29,16 @@
 - تسجيل الدخول بالبريد الإلكتروني يحتاج إلى إعداد مشروع Auth مخصص لـ Jomlati؛ الخيار ظاهر في الواجهة لكنه غير مفعّل حتى الآن.
 - زر تسجيل الخروج يظهر غير متاح إلى أن توجد جلسة دخول فعلية.
 - زر واتساب يحتاج إلى إضافة رقم التواصل الرسمي بصيغة دولية (أرقام فقط) في ثابت `VELORA_WHATSAPP_NUMBER` داخل `app.js`.
+
+
+## Firebase backend (project: jomlati-2ad49)
+- Web app nickname: `Jomlati-Web`; hosting remains on Cloudflare.
+- Firebase Authentication uses email/password.
+- Firestore database: Standard edition, `me-central2` (Dammam), created in production mode.
+- Browser SDK configuration is held in `firebase-app.js`; Firebase web API configuration is public client configuration. Never add Admin SDK credentials, service-account JSON, or private server keys to this repository.
+- `firebase-app.js` provides email/password registration, login, sign-out, password reset, profile creation, public content loading, and owner dashboard actions.
+- `firestore.rules` contains the intended least-privilege rules. Before deploying them, replace `REPLACE_WITH_OWNER_UID` with the UID of the owner's Firebase Auth account. The same UID must be assigned to `OWNER_UID` in `firebase-app.js`.
+- Add the production Cloudflare hostname to Firebase Authentication > Settings > Authorized domains before testing signup/login.
+- After the owner account is registered and its UID is assigned, publish `firestore.rules` in Firebase Console > Firestore Database > Rules.
+- Then sign in as owner, import the 365 default sentences from the owner dashboard, and test that public visitors can read the published library while only the owner can modify it.
+- Firebase Auth and Firestore integration is not considered production-ready until the owner UID is configured, rules are published, and real-browser tests pass.
