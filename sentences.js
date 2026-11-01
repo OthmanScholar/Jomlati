@@ -1,4 +1,4 @@
-/* 252 reviewed learning prompts for Jomlati MVP. */
+/* 262 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3389,5 +3389,106 @@ const sentences = [
     "level": "متوسط",
     "category": "الحياة والتواصل الاجتماعي",
     "usage": "لوصف التضامن بين الأصدقاء أو أفراد المجتمع."
+  }
+,
+  {
+    "en": "We made everyone feel welcome at the gathering.",
+    "ar": "حرصنا على أن يشعر الجميع بالترحيب في التجمع.",
+    "word": "welcome",
+    "meaning": "الترحيب",
+    "options": ["الترحيب","الانتقاد","الغياب"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف أجواء اجتماعية مريحة ومرحبة."
+  },
+  {
+    "en": "My cousin and I grew up in the same neighborhood.",
+    "ar": "كبرت أنا وابن عمي في الحي نفسه.",
+    "word": "grew up",
+    "meaning": "كبرنا / نشأنا",
+    "options": ["كبرنا / نشأنا","انتقلنا","تعارفنا"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن علاقة الأقارب والذكريات المشتركة."
+  },
+  {
+    "en": "She checks on her friends when they feel down.",
+    "ar": "تطمئن على أصدقائها عندما يشعرون بالإحباط.",
+    "word": "checks on",
+    "meaning": "تطمئن على",
+    "options": ["تطمئن على","تختلف مع","تبتعد عن"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف الاهتمام بالأصدقاء في الأوقات الصعبة."
+  },
+  {
+    "en": "We arranged to help our neighbor move house.",
+    "ar": "رتبنا لمساعدة جارنا في الانتقال إلى منزل آخر.",
+    "word": "arranged",
+    "meaning": "رتبنا",
+    "options": ["رتبنا","ألغينا","نسينا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن التعاون بين الجيران."
+  },
+  {
+    "en": "It is polite to thank the host before leaving.",
+    "ar": "من اللائق شكر المضيف قبل المغادرة.",
+    "word": "host",
+    "meaning": "المضيف",
+    "options": ["المضيف","الضيف","الجار"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن آداب الزيارة."
+  },
+  {
+    "en": "Their friendship has lasted for more than a decade.",
+    "ar": "استمرت صداقتهما لأكثر من عقد.",
+    "word": "decade",
+    "meaning": "عقد من الزمن",
+    "options": ["عقد من الزمن","أسبوع","شهر"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف صداقة طويلة الأمد."
+  },
+  {
+    "en": "We listened carefully to each person's point of view.",
+    "ar": "استمعنا بعناية إلى وجهة نظر كل شخص.",
+    "word": "point of view",
+    "meaning": "وجهة نظر",
+    "options": ["وجهة نظر","موعد محدد","خبر عاجل"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن الحوار واحترام اختلاف الآراء."
+  },
+  {
+    "en": "The volunteers distributed food to families in need.",
+    "ar": "وزع المتطوعون الطعام على الأسر المحتاجة.",
+    "word": "distributed",
+    "meaning": "وزعوا",
+    "options": ["وزعوا","جمعوا","اشتروا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف نشاط تطوعي لخدمة المجتمع."
+  },
+  {
+    "en": "We take care to include everyone in our plans.",
+    "ar": "نحرص على إشراك الجميع في خططنا.",
+    "word": "include",
+    "meaning": "يشرك / يضم",
+    "options": ["يشرك / يضم","يستبعد","يؤجل"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن الشمول والمشاركة في الأنشطة."
+  },
+  {
+    "en": "A sincere thank-you can strengthen a relationship.",
+    "ar": "قد تقوي كلمة شكر صادقة العلاقة بين الناس.",
+    "word": "sincere",
+    "meaning": "صادق / مخلص",
+    "options": ["صادق / مخلص","متأخر","عابر"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن أثر التقدير والامتنان في العلاقات."
   }
 ];
