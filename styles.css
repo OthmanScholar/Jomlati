@@ -4,3 +4,17 @@
 @media(max-width:600px){.topbar{height:66px;padding:0 16px}.shell{padding:18px 14px 30px}.hero{min-height:180px;padding:25px 22px}.hero h1{font-size:28px}.hero-orbit{width:83px;height:83px;font-size:20px;box-shadow:0 0 0 10px rgba(255,255,255,.035),0 0 0 20px rgba(255,255,255,.025)}.tabs{margin:17px 0 23px}.tab{font-size:13px;padding:11px 4px}.sentence-card{padding:20px 17px}.sentence-en{font-size:26px}.answers{grid-template-columns:1fr}.answer{text-align:right}.progress-stats{gap:6px}.progress-stats div{padding:10px 8px}.progress-stats strong{font-size:21px}.progress-stats span{font-size:10px}.section-heading h2{font-size:22px}.setting-row{align-items:flex-start;flex-wrap:wrap}}
 
 .category-tag{background:#fff5df;color:#946512;padding:6px 11px;border-radius:30px;font-size:11px;font-weight:700}.usage-note{margin:0 0 18px;color:#718391;font-size:14px;line-height:1.7}.quiz-note{font-size:12px;color:#84939d;margin:10px 0 0}.favorite-item small{display:inline-block;margin-top:7px;color:#168b78;font-size:11px}
+
+/* VELORA INTERNATIONAL brand + centered learning cards */
+.brand-parent{font-size:8px!important;letter-spacing:1.2px;color:#168e7a!important;margin-top:3px}
+.brand-welcome{display:flex;flex-direction:column;gap:3px;margin-bottom:12px}
+.brand-welcome-name{font-size:12px;letter-spacing:2.4px;font-weight:800;color:#55d6bd}
+.brand-welcome-sub{font-size:11px;color:#d1e6e8;font-weight:500}
+.hero h1{max-width:680px}.hero h1 em{font-size:.78em;display:inline-block;margin-top:3px}
+.sentence-card{text-align:center}.card-top{direction:rtl}
+.sentence-en{text-align:center;margin:26px auto 10px;max-width:100%}
+.pronunciation,.usage-note{text-align:center}
+.translation{text-align:center;border-right:0;border-bottom:3px solid var(--mint);border-radius:10px;padding:13px 16px}
+.card-actions{justify-content:center;flex-wrap:wrap}.card-actions .primary-btn{flex:0 1 260px}
+.footer-tagline{display:inline-block;margin-top:5px;font-size:9px;letter-spacing:1.5px;color:#a5b4bc}
+@media(max-width:600px){.brand-parent{font-size:7px!important;letter-spacing:.8px}.brand-welcome{margin-bottom:8px}.brand-welcome-name{font-size:10px;letter-spacing:1.8px}.brand-welcome-sub{font-size:10px}.hero h1{font-size:25px}.hero h1 em{font-size:.78em}.sentence-en{text-align:center}.card-actions .primary-btn{flex:1 1 100%}}
