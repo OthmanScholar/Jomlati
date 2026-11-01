@@ -1,0 +1,56 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // Replace this placeholder with the owner's Firebase Authentication UID.
+    // Until then, no account has administrative privileges.
+    function isOwner() {
+      return signedIn() && request.auth.uid == "REPLACE_WITH_OWNER_UID";
+    }
+
+    match /users/{userId} {
+      allow create: if signedIn()
+        && request.auth.uid == userId
+        && request.resource.data.keys().hasOnly([
+          "uid", "email", "displayName", "createdAt", "lastLoginAt"
+        ])
+        && request.resource.data.uid == userId
+        && request.resource.data.email == request.auth.token.email;
+
+      allow read: if isOwner() || (signedIn() && request.auth.uid == userId);
+
+      allow update: if isOwner()
+        || (
+          signedIn()
+          && request.auth.uid == userId
+          && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(["email", "displayName", "lastLoginAt"])
+          && request.resource.data.uid == userId
+          && request.resource.data.email == request.auth.token.email
+        );
+
+      allow delete: if isOwner();
+    }
+
+    // Published learning content is readable by all visitors.
+    // Only the authenticated app owner can change it.
+    match /siteContent/{documentId} {
+      allow read: if documentId == "library";
+      allow write: if isOwner();
+    }
+
+    // The public welcome text and active announcement are public-read, owner-write.
+    match /siteSettings/{documentId} {
+      allow read: if documentId == "public";
+      allow write: if isOwner();
+    }
+
+    // Private user progress can only be read or changed by its account owner.
+    match /userProgress/{userId} {
+      allow read, write: if isOwner() || (signedIn() && request.auth.uid == userId);
+    }
+  }
+}
