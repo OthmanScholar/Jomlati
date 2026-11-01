@@ -1,4 +1,4 @@
-/* 192 reviewed learning prompts for Jomlati MVP. */
+/* 217 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -2687,5 +2687,355 @@ const sentences = [
     "level": "مبتدئ",
     "category": "محادثات يومية",
     "usage": "وداع ودود عند توقع اللقاء مجدداً."
+  },
+  {
+    "en": "I usually spend time with my family.",
+    "ar": "عادة أقضي وقتاً مع عائلتي.",
+    "word": "usually",
+    "meaning": "عادة",
+    "options": [
+      "عادة",
+      "نادراً",
+      "أبداً"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "وصف نشاط متكرر في الحياة اليومية."
+  },
+  {
+    "en": "We are planning a family gathering.",
+    "ar": "نحن نخطط لتجمع عائلي.",
+    "word": "gathering",
+    "meaning": "تجمع",
+    "options": [
+      "تجمع",
+      "رحلة عمل",
+      "موعد طبي"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن لقاء يجمع أفراد العائلة."
+  },
+  {
+    "en": "My cousin is coming to visit us.",
+    "ar": "ابن عمي قادم لزيارتنا.",
+    "word": "cousin",
+    "meaning": "ابن العم / ابنة العم",
+    "options": [
+      "ابن العم / ابنة العم",
+      "جار",
+      "زميل"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تقديم معلومة عن زيارة أحد الأقارب."
+  },
+  {
+    "en": "We grew up in the same neighborhood.",
+    "ar": "نشأنا في الحي نفسه.",
+    "word": "grew up",
+    "meaning": "نشأنا",
+    "options": [
+      "نشأنا",
+      "انتقلنا",
+      "عملنا"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن الطفولة والمكان الذي نشأت فيه."
+  },
+  {
+    "en": "I have known her since childhood.",
+    "ar": "أعرفها منذ الطفولة.",
+    "word": "since",
+    "meaning": "منذ",
+    "options": [
+      "منذ",
+      "حتى",
+      "خلال"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تصف علاقة بدأت في الماضي وما زالت مستمرة."
+  },
+  {
+    "en": "We have a lot in common.",
+    "ar": "لدينا الكثير من الأمور المشتركة.",
+    "word": "in common",
+    "meaning": "مشترك",
+    "options": [
+      "مشترك",
+      "مختلف",
+      "مؤقت"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تصف أوجه التشابه بين شخصين."
+  },
+  {
+    "en": "He is one of my closest friends.",
+    "ar": "إنه أحد أقرب أصدقائي.",
+    "word": "closest",
+    "meaning": "الأقرب",
+    "options": [
+      "الأقرب",
+      "الأحدث",
+      "الأطول"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن صديق مقرّب."
+  },
+  {
+    "en": "We lost touch after graduation.",
+    "ar": "انقطع التواصل بيننا بعد التخرج.",
+    "word": "lost touch",
+    "meaning": "انقطع التواصل",
+    "options": [
+      "انقطع التواصل",
+      "بدأنا العمل",
+      "تبادلنا الزيارات"
+    ],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تصف انقطاع التواصل مع شخص."
+  },
+  {
+    "en": "I hope we can meet more often.",
+    "ar": "آمل أن نتمكن من اللقاء بشكل أكثر تكراراً.",
+    "word": "often",
+    "meaning": "غالباً / بشكل متكرر",
+    "options": [
+      "غالباً / بشكل متكرر",
+      "نادراً",
+      "مرة واحدة"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن الرغبة في تكرار اللقاءات."
+  },
+  {
+    "en": "She always makes everyone feel welcome.",
+    "ar": "هي تجعل الجميع يشعرون بالترحيب دائماً.",
+    "word": "welcome",
+    "meaning": "بالترحيب",
+    "options": [
+      "بالترحيب",
+      "بالقلق",
+      "بالملل"
+    ],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "وصف شخص يجيد استقبال الآخرين."
+  },
+  {
+    "en": "We are celebrating my brother's birthday.",
+    "ar": "نحتفل بعيد ميلاد أخي.",
+    "word": "celebrating",
+    "meaning": "نحتفل",
+    "options": [
+      "نحتفل",
+      "نعتذر",
+      "ننتقل"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن مناسبة عائلية."
+  },
+  {
+    "en": "I brought a small gift for you.",
+    "ar": "أحضرت لك هدية صغيرة.",
+    "word": "brought",
+    "meaning": "أحضرت",
+    "options": [
+      "أحضرت",
+      "استعرت",
+      "فقدت"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تقال عند تقديم هدية."
+  },
+  {
+    "en": "You did not have to bring anything.",
+    "ar": "لم يكن عليك إحضار أي شيء.",
+    "word": "have to",
+    "meaning": "كان عليك / يجب",
+    "options": [
+      "كان عليك / يجب",
+      "يمكنك دائماً",
+      "لا يمكنك"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "رد لطيف عندما يحضر الضيف هدية."
+  },
+  {
+    "en": "Thank you for inviting me.",
+    "ar": "شكراً لدعوتي.",
+    "word": "inviting",
+    "meaning": "دعوتي",
+    "options": [
+      "دعوتي",
+      "انتظاري",
+      "مساعدتي"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "شكر المضيف على الدعوة."
+  },
+  {
+    "en": "I had a wonderful evening.",
+    "ar": "قضيت أمسية رائعة.",
+    "word": "evening",
+    "meaning": "أمسية",
+    "options": [
+      "أمسية",
+      "صباحاً",
+      "أسبوعاً"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تعبير عن الاستمتاع بزيارة أو مناسبة."
+  },
+  {
+    "en": "The children are playing outside.",
+    "ar": "الأطفال يلعبون في الخارج.",
+    "word": "outside",
+    "meaning": "في الخارج",
+    "options": [
+      "في الخارج",
+      "في الداخل",
+      "في الأعلى"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "وصف ما يفعله الأطفال."
+  },
+  {
+    "en": "We enjoy having guests at home.",
+    "ar": "نستمتع باستضافة الضيوف في المنزل.",
+    "word": "guests",
+    "meaning": "الضيوف",
+    "options": [
+      "الضيوف",
+      "الجيران",
+      "الموظفون"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن استقبال الزوار."
+  },
+  {
+    "en": "Please feel free to visit anytime.",
+    "ar": "لا تتردد في زيارتنا في أي وقت.",
+    "word": "anytime",
+    "meaning": "في أي وقت",
+    "options": [
+      "في أي وقت",
+      "مرة واحدة",
+      "في وقت متأخر فقط"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "دعوة ودية لزيارة المنزل."
+  },
+  {
+    "en": "I will bring something to share.",
+    "ar": "سأحضر شيئاً لنتشاركه.",
+    "word": "share",
+    "meaning": "نتشارك",
+    "options": [
+      "نتشارك",
+      "نخفي",
+      "نستبدل"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تقال عند الاتفاق على إحضار طعام أو شيء للمجموعة."
+  },
+  {
+    "en": "Everyone contributed to the celebration.",
+    "ar": "ساهم الجميع في الاحتفال.",
+    "word": "contributed",
+    "meaning": "ساهم",
+    "options": [
+      "ساهم",
+      "اعترض",
+      "غادر"
+    ],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "وصف مشاركة أفراد المجموعة في مناسبة."
+  },
+  {
+    "en": "We had a lovely time together.",
+    "ar": "قضينا وقتاً جميلاً معاً.",
+    "word": "together",
+    "meaning": "معاً",
+    "options": [
+      "معاً",
+      "بمفردنا",
+      "مبكراً"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تعبير عن متعة قضاء الوقت مع الآخرين."
+  },
+  {
+    "en": "It was nice seeing the whole family.",
+    "ar": "كان جميلاً أن أرى العائلة كلها.",
+    "word": "whole",
+    "meaning": "كل / كامل",
+    "options": [
+      "كل / كامل",
+      "بعض",
+      "نصف"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تقال بعد لقاء أفراد العائلة."
+  },
+  {
+    "en": "I should call my parents this evening.",
+    "ar": "ينبغي أن أتصل بوالديّ هذا المساء.",
+    "word": "parents",
+    "meaning": "الوالدان",
+    "options": [
+      "الوالدان",
+      "الأصدقاء",
+      "الأطفال"
+    ],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن التواصل مع الوالدين."
+  },
+  {
+    "en": "We try to have dinner together every Friday.",
+    "ar": "نحاول تناول العشاء معاً كل يوم جمعة.",
+    "word": "try",
+    "meaning": "نحاول",
+    "options": [
+      "نحاول",
+      "ننسى",
+      "نرفض"
+    ],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "تصف عادة عائلية منتظمة."
+  },
+  {
+    "en": "Family traditions are important to us.",
+    "ar": "التقاليد العائلية مهمة بالنسبة إلينا.",
+    "word": "traditions",
+    "meaning": "التقاليد",
+    "options": [
+      "التقاليد",
+      "المواعيد",
+      "المنافسات"
+    ],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن العادات التي تحافظ عليها الأسرة."
   }
 ];
