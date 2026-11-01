@@ -5,7 +5,7 @@ function localDateKey(date = new Date()) {
   return `${y}-${m}-${d}`;
 }
 const todayKey = localDateKey();
-const defaults = {favorites:[],learned:[],correct:0,streak:0,lastVisit:"",level:"مبتدئ",reminder:"08:00",lastReminder:"",quizDone:[]};
+const defaults = {favorites:[],learned:[],correct:0,streak:0,lastVisit:"",lastQuizDate:"",level:"مبتدئ",reminder:"08:00",lastReminder:"",quizDone:[]};
 let savedState = {};
 try { savedState = JSON.parse(localStorage.getItem(STORAGE_KEY) || localStorage.getItem("jomlati-state") || "{}"); } catch { savedState = {}; }
 let state = {...defaults,...savedState};
@@ -46,7 +46,7 @@ function checkAnswer(option,button){
   document.querySelectorAll(".answer").forEach(b=>b.disabled=true);
   if(option===s.meaning){button.classList.add("correct");$("quizFeedback").textContent="أحسنت! إجابة صحيحة 🎉";$("quizFeedback").className="feedback good";state.correct++;}
   else{button.classList.add("wrong");document.querySelectorAll(".answer").forEach(b=>{if(b.textContent===s.meaning)b.classList.add("correct")});$("quizFeedback").textContent=`ليست هذه الإجابة. المعنى الصحيح: ${s.meaning}`;$("quizFeedback").className="feedback bad";}
-  if(!state.learned.includes(s.en))state.learned.push(s.en);state.quizDone.push(todayKey);save();
+  if(!state.learned.includes(s.en))state.learned.push(s.en);state.quizDone.push(todayKey);markQuizStreak();save();
 }
 function renderStats(){
   $("learnedCount").textContent=state.learned.length;$("correctCount").textContent=state.correct;$("favoriteCount").textContent=state.favorites.length;$("favBadge").textContent=state.favorites.length;$("favoritesCount").textContent=`${state.favorites.length} جملة`;$ ("streakCount").textContent=state.streak;
@@ -66,8 +66,8 @@ $("reminderTime").value=state.reminder;$("saveReminder").addEventListener("click
 $("enableNotifications").addEventListener("click",async()=>{if(!("Notification" in window)){toast("المتصفح لا يدعم التنبيهات");return;}const permission=await Notification.requestPermission();toast(permission==="granted"?"تم السماح بالتنبيهات":"لم يتم السماح بالتنبيهات");checkReminder();});
 function checkReminder(){if(!("Notification" in window)||Notification.permission!=="granted")return;const now=new Date(),hhmm=now.toTimeString().slice(0,5);if(hhmm>=state.reminder&&state.lastReminder!==todayKey){new Notification("جملتي — وقت التعلّم!",{body:"افتح التطبيق وتعلّم جملة إنجليزية جديدة اليوم."});state.lastReminder=todayKey;save();}}
 $("resetData").addEventListener("click",()=>{if(confirm("هل تريد حذف تقدمك ومفرداتك المحفوظة من هذا الجهاز؟")){state={...defaults};save();$("levelSelect").value=state.level;$("reminderTime").value=state.reminder;renderSentence();renderFavorites();toast("تمت إعادة ضبط البيانات");}});
-function visit(){if(state.lastVisit!==todayKey){const yesterday=localDateKey(new Date(Date.now()-86400000));state.streak=state.lastVisit===yesterday?state.streak+1:1;state.lastVisit=todayKey;save();}}
+function markQuizStreak(){if(state.lastQuizDate===todayKey)return;const yesterday=localDateKey(new Date(Date.now()-86400000));state.streak=state.lastQuizDate===yesterday?state.streak+1:1;state.lastQuizDate=todayKey;}
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installBtn").hidden=false;});
 $("installBtn").addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$("installBtn").hidden=true;});
 if("serviceWorker" in navigator&&location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error));}
-visit();renderSentence();renderStats();checkReminder();setInterval(checkReminder,60000);
+renderSentence();renderStats();checkReminder();setInterval(checkReminder,60000);
