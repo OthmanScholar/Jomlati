@@ -1,4 +1,4 @@
-/* 352 reviewed learning prompts for Jomlati MVP. */
+/* 365 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -4395,5 +4395,136 @@ const sentences = [
     "level": "متقدم",
     "category": "الدراسة والجامعة",
     "usage": "للحديث عن مناقشة نتائج البحث العلمي."
+  }
+,
+  {
+    "en": "My thesis focuses on educational leadership.",
+    "ar": "تركز رسالتي على القيادة التربوية.",
+    "word": "thesis",
+    "meaning": "رسالة علمية",
+    "options": ["رسالة علمية","محاضرة","خطة دراسية"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "للتعريف بموضوع الرسالة أو البحث الأكاديمي."
+  },
+  {
+    "en": "The department has announced the examination timetable.",
+    "ar": "أعلن القسم جدول الامتحانات.",
+    "word": "timetable",
+    "meaning": "جدول زمني",
+    "options": ["جدول زمني","قائمة حضور","خطة بحث"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن مواعيد الامتحانات الرسمية."
+  },
+  {
+    "en": "Students must complete the required credit hours.",
+    "ar": "يجب على الطلبة إكمال الساعات المعتمدة المطلوبة.",
+    "word": "credit hours",
+    "meaning": "الساعات المعتمدة",
+    "options": ["الساعات المعتمدة","الساعات الإضافية","ساعات الدوام"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "لشرح متطلبات إكمال البرنامج الجامعي."
+  },
+  {
+    "en": "I asked the lecturer for an extension on the assignment.",
+    "ar": "طلبت من المحاضر تمديد موعد تسليم الواجب.",
+    "word": "extension",
+    "meaning": "تمديد / مهلة إضافية",
+    "options": ["تمديد / مهلة إضافية","علامة إضافية","شرح إضافي"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "لطلب وقت إضافي لإنجاز تكليف دراسي."
+  },
+  {
+    "en": "The online platform provides recorded lectures.",
+    "ar": "توفر المنصة الإلكترونية محاضرات مسجلة.",
+    "word": "recorded",
+    "meaning": "مسجلة",
+    "options": ["مسجلة","مباشرة فقط","ملغاة"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "لوصف موارد التعلم الإلكتروني."
+  },
+  {
+    "en": "I usually take notes during the lecture.",
+    "ar": "عادةً ما أدون الملاحظات أثناء المحاضرة.",
+    "word": "take notes",
+    "meaning": "أدون الملاحظات",
+    "options": ["أدون الملاحظات","أطرح الأسئلة","أغادر القاعة"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "لوصف طريقة متابعة المحاضرات."
+  },
+  {
+    "en": "The assignment requires us to compare two theories.",
+    "ar": "يتطلب منا التكليف مقارنة نظريتين.",
+    "word": "compare",
+    "meaning": "نقارن",
+    "options": ["نقارن","نحفظ","نلخص"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "لفهم تعليمات مهمة أكاديمية تحليلية."
+  },
+  {
+    "en": "Please cite your sources using the required format.",
+    "ar": "يرجى توثيق مصادرك باستخدام النمط المطلوب.",
+    "word": "cite",
+    "meaning": "توثق / تستشهد بـ",
+    "options": ["توثق / تستشهد بـ","تترجم","تختار"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "للتذكير بقواعد توثيق المراجع الأكاديمية."
+  },
+  {
+    "en": "I have applied for a scholarship to continue my studies.",
+    "ar": "قدمت طلباً للحصول على منحة لمواصلة دراستي.",
+    "word": "scholarship",
+    "meaning": "منحة دراسية",
+    "options": ["منحة دراسية","قرض مصرفي","وظيفة مؤقتة"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن طلب تمويل للدراسة."
+  },
+  {
+    "en": "The library stays open until late during exam week.",
+    "ar": "تبقى المكتبة مفتوحة حتى وقت متأخر خلال أسبوع الامتحانات.",
+    "word": "until late",
+    "meaning": "حتى وقت متأخر",
+    "options": ["حتى وقت متأخر","في الصباح الباكر","وقت الظهيرة"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للتحدث عن ساعات عمل المكتبة في فترة الامتحانات."
+  },
+  {
+    "en": "Our supervisor encouraged us to collect more data.",
+    "ar": "شجعنا مشرفنا على جمع مزيد من البيانات.",
+    "word": "collect",
+    "meaning": "نجمع",
+    "options": ["نجمع","نحذف","نعرض"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن توجيهات المشرف خلال البحث."
+  },
+  {
+    "en": "The final grade includes coursework and the exam.",
+    "ar": "تشمل العلامة النهائية أعمال الفصل والامتحان.",
+    "word": "coursework",
+    "meaning": "أعمال الفصل الدراسي",
+    "options": ["أعمال الفصل الدراسي","الأنشطة اللامنهجية","ساعات التدريب"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "لفهم مكونات التقييم النهائي للمساق."
+  },
+  {
+    "en": "I passed the course with a very good grade.",
+    "ar": "اجتزت المساق بتقدير جيد جداً.",
+    "word": "passed",
+    "meaning": "اجتزت / نجحت في",
+    "options": ["اجتزت / نجحت في","انسحبت من","أعدت"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن نتيجة النجاح في مساق جامعي."
   }
 ];
