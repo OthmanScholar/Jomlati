@@ -1,4 +1,4 @@
-/* 297 reviewed learning prompts for Jomlati MVP. */
+/* 317 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3842,5 +3842,206 @@ const sentences = [
     "level": "متقدم",
     "category": "السفر والتنقل",
     "usage": "للحديث عن شراء الهدايا التذكارية خلال السفر."
+  }
+,
+  {
+    "en": "I am responsible for preparing the monthly report.",
+    "ar": "أنا مسؤول عن إعداد التقرير الشهري.",
+    "word": "responsible",
+    "meaning": "مسؤول",
+    "options": ["مسؤول","متردد","متقاعد"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لشرح مسؤولياتك في مكان العمل."
+  },
+  {
+    "en": "Could you tell me more about the position?",
+    "ar": "هل يمكنك إخباري بالمزيد عن الوظيفة؟",
+    "word": "position",
+    "meaning": "وظيفة / منصب",
+    "options": ["وظيفة / منصب","راتب","إجازة"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "لسؤال مسؤول التوظيف عن تفاصيل الوظيفة."
+  },
+  {
+    "en": "I have three years of experience in customer service.",
+    "ar": "لدي ثلاث سنوات من الخبرة في خدمة العملاء.",
+    "word": "customer service",
+    "meaning": "خدمة العملاء",
+    "options": ["خدمة العملاء","إدارة الحسابات","التسويق الرقمي"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "لتوضيح مجال خبرتك المهنية."
+  },
+  {
+    "en": "I work well both independently and as part of a team.",
+    "ar": "أعمل جيداً بشكل مستقل وضمن فريق أيضاً.",
+    "word": "independently",
+    "meaning": "بشكل مستقل",
+    "options": ["بشكل مستقل","بصعوبة","مؤقتاً"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف قدرتك على العمل منفرداً ومع الآخرين."
+  },
+  {
+    "en": "We need to meet the deadline by Thursday.",
+    "ar": "علينا الالتزام بالموعد النهائي بحلول يوم الخميس.",
+    "word": "deadline",
+    "meaning": "الموعد النهائي",
+    "options": ["الموعد النهائي","موعد المقابلة","وقت الاستراحة"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "للتأكيد على موعد تسليم مهمة."
+  },
+  {
+    "en": "I would be happy to discuss my qualifications.",
+    "ar": "يسعدني مناقشة مؤهلاتي.",
+    "word": "qualifications",
+    "meaning": "المؤهلات",
+    "options": ["المؤهلات","الهوايات","المواصلات"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "عبارة مهنية عند الحديث عن مدى ملاءمتك للوظيفة."
+  },
+  {
+    "en": "The team is working on a new project.",
+    "ar": "يعمل الفريق على مشروع جديد.",
+    "word": "project",
+    "meaning": "مشروع",
+    "options": ["مشروع","عقد","مكتب"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن مهمة أو مبادرة يعمل عليها الفريق."
+  },
+  {
+    "en": "I handled several tasks during a very busy period.",
+    "ar": "توليت عدة مهام خلال فترة مزدحمة جداً.",
+    "word": "handled",
+    "meaning": "توليت / تعاملت مع",
+    "options": ["توليت / تعاملت مع","تجاهلت","ألغيت"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لشرح قدرتك على إدارة مهام متعددة."
+  },
+  {
+    "en": "Our department is looking for ways to improve efficiency.",
+    "ar": "يبحث قسمنا عن طرق لتحسين الكفاءة.",
+    "word": "efficiency",
+    "meaning": "الكفاءة",
+    "options": ["الكفاءة","الغياب","المنافسة"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن تحسين جودة العمل واستخدام الوقت والموارد."
+  },
+  {
+    "en": "I would like to learn more about the company culture.",
+    "ar": "أود معرفة المزيد عن ثقافة الشركة.",
+    "word": "culture",
+    "meaning": "الثقافة",
+    "options": ["الثقافة","الموقع","الميزانية"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لسؤال جهة العمل عن بيئة العمل وقيم المؤسسة."
+  },
+  {
+    "en": "I can adapt quickly to new working environments.",
+    "ar": "أستطيع التكيف بسرعة مع بيئات العمل الجديدة.",
+    "word": "adapt",
+    "meaning": "أتكيف",
+    "options": ["أتكيف","أعترض","أنسحب"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف المرونة والاستعداد للتغيير المهني."
+  },
+  {
+    "en": "The manager asked me to prioritize the urgent tasks.",
+    "ar": "طلب مني المدير تحديد أولويات المهام العاجلة.",
+    "word": "prioritize",
+    "meaning": "أحدد الأولويات",
+    "options": ["أحدد الأولويات","أوزع الرواتب","أؤجل الاجتماعات"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن تنظيم المهام بحسب أهميتها."
+  },
+  {
+    "en": "The supervisor praised the team's progress.",
+    "ar": "أثنى المشرف على تقدم الفريق.",
+    "word": "praised",
+    "meaning": "أثنى على",
+    "options": ["أثنى على","اعترض على","تجاهل"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف التقدير الذي يتلقاه الفريق في العمل."
+  },
+  {
+    "en": "I scheduled a follow-up call with the client.",
+    "ar": "حددت موعد مكالمة متابعة مع العميل.",
+    "word": "follow-up",
+    "meaning": "متابعة",
+    "options": ["متابعة","مقابلة أولية","إجازة"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن متابعة التواصل مع عميل بعد اجتماع."
+  },
+  {
+    "en": "My contract is valid until the end of December.",
+    "ar": "عقدي ساري حتى نهاية ديسمبر.",
+    "word": "contract",
+    "meaning": "عقد",
+    "options": ["عقد","سيرة ذاتية","طلب"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للتحدث عن مدة سريان عقد العمل."
+  },
+  {
+    "en": "We discussed the budget before approving the purchase.",
+    "ar": "ناقشنا الميزانية قبل الموافقة على عملية الشراء.",
+    "word": "approving",
+    "meaning": "الموافقة على",
+    "options": ["الموافقة على","تأجيل","إلغاء"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف إجراء إداري يسبق اعتماد المشتريات."
+  },
+  {
+    "en": "Please submit your timesheet by the end of the week.",
+    "ar": "يرجى تقديم كشف ساعات العمل بحلول نهاية الأسبوع.",
+    "word": "timesheet",
+    "meaning": "كشف ساعات العمل",
+    "options": ["كشف ساعات العمل","خطاب التوصية","خطة التدريب"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للتذكير بتقديم سجل ساعات العمل."
+  },
+  {
+    "en": "The company provides training for new employees.",
+    "ar": "توفر الشركة تدريباً للموظفين الجدد.",
+    "word": "employees",
+    "meaning": "الموظفون",
+    "options": ["الموظفون","العملاء","الموردون"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للتحدث عن برامج تهيئة الموظفين الجدد."
+  },
+  {
+    "en": "I prepared a short presentation for the meeting.",
+    "ar": "أعددت عرضاً تقديمياً قصيراً للاجتماع.",
+    "word": "presentation",
+    "meaning": "عرض تقديمي",
+    "options": ["عرض تقديمي","تقرير مالي","طلب توظيف"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن الاستعداد لاجتماع مهني."
+  },
+  {
+    "en": "We resolved the issue by discussing it openly.",
+    "ar": "حللنا المشكلة من خلال مناقشتها بصراحة.",
+    "word": "resolved",
+    "meaning": "حللنا",
+    "options": ["حللنا","أخفينا","كررنا"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف حل مشكلة في بيئة العمل بالتواصل."
   }
 ];
