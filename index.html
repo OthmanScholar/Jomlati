@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102d43">
+  <meta name="description" content="جملتي — تعلّم الإنجليزية كل يوم بجملة واحدة.">
+  <title>جملتي | Jomlati</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="جملتي الرئيسية">
+      <span class="brand-mark">ج</span>
+      <span><strong>جملتي</strong><small>JOMLATI</small></span>
+    </a>
+    <div class="top-actions">
+      <span class="streak" title="أيام التعلّم المتتالية">🔥 <b id="streakCount">0</b></span>
+      <button class="icon-btn" id="installBtn" hidden aria-label="تثبيت التطبيق" title="تثبيت التطبيق">⬇</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">خطوة صغيرة كل يوم</span>
+        <h1>إنجليزيتك تبدأ<br><em>بجملة واحدة.</em></h1>
+        <p>جمل إنجليزية من الحياة اليومية، مع شرح عربي واختبار قصير كل يوم.</p>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><span>ABC</span><b>✦</b></div>
+    </section>
+
+    <nav class="tabs" aria-label="التنقل الرئيسي">
+      <button class="tab active" data-page="today">جملة اليوم</button>
+      <button class="tab" data-page="favorites">مفرداتي <span id="favBadge">0</span></button>
+      <button class="tab" data-page="settings">الإعدادات</button>
+    </nav>
+
+    <section id="todayPage" class="page">
+      <div class="section-heading">
+        <div><span class="eyebrow">جرعتك اليومية</span><h2>جملة اليوم <span class="spark">✦</span></h2></div>
+        <span class="date-chip" id="todayDate"></span>
+      </div>
+
+      <article class="sentence-card">
+        <div class="card-top"><span class="level-tag" id="sentenceLevel">مبتدئ</span><span class="category-tag" id="sentenceCategory">محادثات يومية</span></div>
+        <p class="sentence-en" id="sentenceText">Every day is a new opportunity.</p>
+        <p class="usage-note" id="usageNote">تُستخدم في المحادثات اليومية.</p>
+        <div class="translation" id="translation">كل يوم فرصة جديدة.</div>
+        <div class="card-actions">
+          <button class="primary-btn" id="speakBtn"><span>▶</span> استمع للنطق</button>
+          <button class="round-btn" id="favoriteBtn" aria-label="إضافة للمفضلة" title="إضافة للمفضلة">♡</button>
+          <button class="round-btn" id="copyBtn" aria-label="نسخ الجملة" title="نسخ الجملة">⧉</button>
+        </div>
+      </article>
+
+      <section class="quiz-card">
+        <div class="quiz-title"><div><span class="eyebrow">تثبيت المعلومة</span><h3>اختبر فهمك</h3></div><span class="quiz-icon">?</span></div>
+        <p class="question" id="questionText">ما معنى كلمة <b>opportunity</b>؟</p>
+        <div id="answers" class="answers"></div>
+        <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+        <p class="quiz-note">اختبار واحد يومياً يساعدك على تثبيت الجملة في ذاكرتك.</p>
+      </section>
+
+      <section class="progress-card">
+        <div><span class="eyebrow">استمر على هذا الإيقاع</span><h3>رحلتك تتقدم</h3></div>
+        <div class="progress-stats"><div><strong id="learnedCount">0</strong><span>جمل تعلّمتها</span></div><div><strong id="correctCount">0</strong><span>إجابات صحيحة</span></div><div><strong id="favoriteCount">0</strong><span>جمل محفوظة</span></div></div>
+      </section>
+    </section>
+
+    <section id="favoritesPage" class="page" hidden>
+      <div class="section-heading"><div><span class="eyebrow">مجموعتك الخاصة</span><h2>مفرداتي</h2></div><span class="date-chip" id="favoritesCount">0 جملة</span></div>
+      <div id="favoritesList" class="favorites-list"></div>
+    </section>
+
+    <section id="settingsPage" class="page" hidden>
+      <div class="section-heading"><div><span class="eyebrow">خصص تجربتك</span><h2>الإعدادات</h2></div></div>
+      <div class="settings-card">
+        <label for="levelSelect">مستوى اللغة</label>
+        <select id="levelSelect"><option>مبتدئ</option><option>متوسط</option><option>متقدم</option></select>
+        <div class="setting-divider"></div>
+        <label for="reminderTime">موعد التذكير اليومي</label>
+        <div class="setting-row"><input type="time" id="reminderTime" value="08:00"><button class="secondary-btn" id="saveReminder">حفظ الموعد</button></div>
+        <p class="hint">يعمل التذكير المحلي عندما يكون التطبيق مفتوحاً. التنبيهات المضمونة أثناء إغلاق التطبيق تحتاج إلى خدمة إشعارات وخادم.</p>
+        <button class="secondary-btn full" id="enableNotifications">تفعيل إذن التنبيهات</button>
+        <div class="setting-divider"></div>
+        <div class="setting-row"><div><b>بيانات التعلّم</b><p class="hint">إعادة ضبط التقدم والمفضلة على هذا الجهاز.</p></div><button class="danger-btn" id="resetData">إعادة ضبط</button></div>
+        <p class="version">جملتي · النسخة التجريبية 0.3</p>
+      </div>
+    </section>
+
+    <footer>صُمّم لتتعلّم قليلاً كل يوم <span>♥</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="sentences.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

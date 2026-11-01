@@ -1,0 +1,20 @@
+{
+  "name": "جملتي | Jomlati",
+  "short_name": "جملتي",
+  "description": "تعلّم الإنجليزية اليومية بجملة مفيدة كل يوم مع ترجمة واختبار.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f8fa",
+  "theme_color": "#102d43",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
