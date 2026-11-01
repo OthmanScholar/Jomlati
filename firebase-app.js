@@ -1,8 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 import {
-  getAuth, onAuthStateChanged, signInWithEmailAndPassword,
+  initializeAuth, onAuthStateChanged, signInWithEmailAndPassword,
   createUserWithEmailAndPassword, signOut, sendPasswordResetEmail,
-  sendEmailVerification, setPersistence, browserLocalPersistence
+  sendEmailVerification, browserLocalPersistence
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 import {
   getFirestore, doc, getDoc, setDoc, updateDoc, collection, getDocs,
@@ -21,7 +21,7 @@ const firebaseConfig = {
 // Set this only after the owner account has been created in Firebase Authentication.
 const OWNER_UID = "VELqTJteQHegrYHhFHSzDYTxLNh2";
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = initializeAuth(app, { persistence: browserLocalPersistence });
 const db = getFirestore(app);
 const $ = (id) => document.getElementById(id);
 
@@ -435,11 +435,8 @@ $("authModeToggle").addEventListener("click", () => {
 $("authUidPanel").hidden = true;
 $("authUidValue").textContent = "";
 
-(async () => {
-  try {
-    await setPersistence(auth, browserLocalPersistence);
-  } catch (error) {
-    console.warn("Could not set local Firebase Auth persistence", error);
-  }
-  await loadPublicContent();
-})();
+// Authentication persistence is configured at initialization so the first
+// auth-state observer restores the existing session before updating the UI.
+loadPublicContent().catch((error) => {
+  console.warn("Could not load Jomlati public content", error);
+});
