@@ -1,4 +1,4 @@
-/* 332 reviewed learning prompts for Jomlati MVP. */
+/* 352 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -4194,5 +4194,206 @@ const sentences = [
     "level": "متقدم",
     "category": "العمل والمقابلات",
     "usage": "للحديث عن تنظيم الوقت وتحقيق نتائج أفضل."
+  }
+,
+  {
+    "en": "I have to submit my assignment by Sunday.",
+    "ar": "عليّ تسليم واجبي بحلول يوم الأحد.",
+    "word": "assignment",
+    "meaning": "واجب / تكليف",
+    "options": ["واجب / تكليف","محاضرة","امتحان"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن موعد تسليم واجب دراسي."
+  },
+  {
+    "en": "The lecture starts at nine in the morning.",
+    "ar": "تبدأ المحاضرة في التاسعة صباحاً.",
+    "word": "lecture",
+    "meaning": "محاضرة",
+    "options": ["محاضرة","استراحة","مناقشة"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "لذكر موعد محاضرة جامعية."
+  },
+  {
+    "en": "I borrowed this book from the university library.",
+    "ar": "استعرت هذا الكتاب من مكتبة الجامعة.",
+    "word": "borrowed",
+    "meaning": "استعرت",
+    "options": ["استعرت","اشتريت","بعت"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن استعارة الكتب والمراجع."
+  },
+  {
+    "en": "Could you explain this topic again, please?",
+    "ar": "هل يمكنك شرح هذا الموضوع مرة أخرى، من فضلك؟",
+    "word": "explain",
+    "meaning": "تشرح",
+    "options": ["تشرح","تختصر","تترجم"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "لطلب إعادة شرح فكرة غير واضحة."
+  },
+  {
+    "en": "Our group is preparing a presentation for class.",
+    "ar": "تُعد مجموعتنا عرضاً تقديمياً للمحاضرة.",
+    "word": "presentation",
+    "meaning": "عرض تقديمي",
+    "options": ["عرض تقديمي","بحث ميداني","امتحان شفهي"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن مهمة جماعية داخل الصف."
+  },
+  {
+    "en": "I need to review my notes before the exam.",
+    "ar": "أحتاج إلى مراجعة ملاحظاتي قبل الامتحان.",
+    "word": "review",
+    "meaning": "أراجع",
+    "options": ["أراجع","أحذف","أطبع"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "لوصف الاستعداد للامتحان."
+  },
+  {
+    "en": "The professor gave us useful reading materials.",
+    "ar": "أعطانا الأستاذ مواد قرائية مفيدة.",
+    "word": "materials",
+    "meaning": "مواد / مصادر",
+    "options": ["مواد / مصادر","علامات","مقاعد"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن المصادر التي يوصي بها الأستاذ."
+  },
+  {
+    "en": "I registered for two elective courses this semester.",
+    "ar": "سجلت في مساقين اختياريين هذا الفصل الدراسي.",
+    "word": "elective",
+    "meaning": "اختياري",
+    "options": ["اختياري","إجباري","تمهيدي"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للتحدث عن اختيار المساقات الجامعية."
+  },
+  {
+    "en": "Attendance is required for all laboratory sessions.",
+    "ar": "الحضور إلزامي في جميع الجلسات المختبرية.",
+    "word": "attendance",
+    "meaning": "الحضور",
+    "options": ["الحضور","التسجيل","التخرج"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للتوضيح أن حضور جلسات المختبر مطلوب."
+  },
+  {
+    "en": "I find it easier to study in a quiet place.",
+    "ar": "أجد أن الدراسة في مكان هادئ أسهل بالنسبة إليّ.",
+    "word": "quiet",
+    "meaning": "هادئ",
+    "options": ["هادئ","مزدحم","مظلم"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "لوصف البيئة المناسبة للدراسة."
+  },
+  {
+    "en": "The results will be published on the student portal.",
+    "ar": "ستُنشر النتائج على بوابة الطالب.",
+    "word": "published",
+    "meaning": "تُنشر",
+    "options": ["تُنشر","تُحذف","تُناقش"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للسؤال أو الحديث عن إعلان النتائج."
+  },
+  {
+    "en": "I am working on my graduation research.",
+    "ar": "أعمل على بحث تخرجي.",
+    "word": "graduation",
+    "meaning": "التخرج",
+    "options": ["التخرج","التسجيل","التدريب"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن مشروع أو بحث التخرج."
+  },
+  {
+    "en": "Please check the course schedule for any updates.",
+    "ar": "يرجى مراجعة جدول المساقات لمعرفة أي تحديثات.",
+    "word": "schedule",
+    "meaning": "جدول",
+    "options": ["جدول","نتيجة","شهادة"],
+    "level": "مبتدئ",
+    "category": "الدراسة والجامعة",
+    "usage": "للتأكد من مواعيد المحاضرات والتغييرات."
+  },
+  {
+    "en": "The instructor asked us to work in pairs.",
+    "ar": "طلب منا المدرس العمل في أزواج.",
+    "word": "pairs",
+    "meaning": "أزواج / ثنائيات",
+    "options": ["أزواج / ثنائيات","مجموعات كبيرة","بشكل فردي"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "لفهم تعليمات نشاط صفي ثنائي."
+  },
+  {
+    "en": "I missed the class because I was feeling unwell.",
+    "ar": "غيبت عن المحاضرة لأنني لم أكن أشعر أنني بخير.",
+    "word": "missed",
+    "meaning": "فاتتني / تغيبت عن",
+    "options": ["فاتتني / تغيبت عن","حضرت","أنهيت"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "لتوضيح سبب الغياب عن محاضرة."
+  },
+  {
+    "en": "The research question should be clear and focused.",
+    "ar": "ينبغي أن يكون سؤال البحث واضحاً ومحدداً.",
+    "word": "focused",
+    "meaning": "محدد / مركز",
+    "options": ["محدد / مركز","غامض","طويل جداً"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "للتعبير عن جودة صياغة سؤال البحث."
+  },
+  {
+    "en": "I am waiting for my supervisor's comments on the draft.",
+    "ar": "أنتظر ملاحظات مشرفي على المسودة.",
+    "word": "draft",
+    "meaning": "مسودة",
+    "options": ["مسودة","نسخة نهائية","ملخص"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن مراجعة المشرف للعمل الأكاديمي."
+  },
+  {
+    "en": "The course helped me improve my academic writing.",
+    "ar": "ساعدني المساق على تحسين الكتابة الأكاديمية.",
+    "word": "academic",
+    "meaning": "أكاديمي",
+    "options": ["أكاديمي","مهني","يومي"],
+    "level": "متوسط",
+    "category": "الدراسة والجامعة",
+    "usage": "لوصف تطور مهارة الكتابة في الدراسة."
+  },
+  {
+    "en": "You can access the journal articles through the library website.",
+    "ar": "يمكنك الوصول إلى مقالات المجلات العلمية عبر موقع المكتبة.",
+    "word": "access",
+    "meaning": "تصل إلى",
+    "options": ["تصل إلى","تستغني عن","تطبع"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "لشرح كيفية العثور على مصادر علمية إلكترونية."
+  },
+  {
+    "en": "We discussed the findings in our research seminar.",
+    "ar": "ناقشنا النتائج في ندوة البحث الخاصة بنا.",
+    "word": "findings",
+    "meaning": "النتائج",
+    "options": ["النتائج","الأسئلة","المراجع"],
+    "level": "متقدم",
+    "category": "الدراسة والجامعة",
+    "usage": "للحديث عن مناقشة نتائج البحث العلمي."
   }
 ];
