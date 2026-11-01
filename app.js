@@ -1,4 +1,5 @@
 const $ = id => document.getElementById(id);
+let sentences = window.JOMLATI_SENTENCES || [];
 const STORAGE_KEY = "jomlati-state-v3";
 function localDateKey(date = new Date()) {
   const y=date.getFullYear(), m=String(date.getMonth()+1).padStart(2,"0"), d=String(date.getDate()).padStart(2,"0");
@@ -121,4 +122,29 @@ document.addEventListener("keydown",event=>{
   }
 });
 
+window.JomlatiApp = {
+  setSentences(items){
+    if(!Array.isArray(items)||!items.length)return;
+    sentences=items;
+    renderSentence();
+    renderStats();
+    renderFavorites();
+  },
+  setWelcome(copy){
+    if(!copy||typeof copy!=="object")return;
+    if(typeof copy.welcomeTitle==="string"&&copy.welcomeTitle.trim())$("welcomeTitle").textContent=copy.welcomeTitle;
+    if(typeof copy.welcomeMessage==="string"&&copy.welcomeMessage.trim())$("welcomeMessage").textContent=copy.welcomeMessage;
+    if(typeof copy.welcomeSignature==="string"&&copy.welcomeSignature.trim())$("welcomeSignature").textContent=copy.welcomeSignature;
+    const banner=$("announcementBanner");
+    if(banner){
+      const active=copy.announcementActive===true&&Boolean(copy.announcementMessage);
+      banner.hidden=!active;
+      if(active){
+        $("announcementTitle").textContent=copy.announcementTitle||"إعلان من جملتي";
+        $("announcementMessage").textContent=copy.announcementMessage;
+      }
+    }
+  },
+  showPage
+};
 renderSentence();renderStats();checkReminder();setInterval(checkReminder,60000);
