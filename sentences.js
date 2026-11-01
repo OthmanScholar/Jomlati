@@ -1,4 +1,4 @@
-/* 120 reviewed learning prompts for Jomlati MVP. */
+/* 140 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -1679,5 +1679,285 @@ const sentences = [
     "level": "متقدم",
     "category": "السفر والتنقل",
     "usage": "عبارة شكر رسمية في نهاية الرحلة."
+  },
+  {
+    "en": "How was your weekend?",
+    "ar": "كيف كانت عطلة نهاية الأسبوع؟",
+    "word": "weekend",
+    "meaning": "عطلة نهاية الأسبوع",
+    "options": [
+      "عطلة نهاية الأسبوع",
+      "يوم العمل",
+      "الإجازة المرضية"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "سؤال شائع لبدء حديث ودي بعد العطلة."
+  },
+  {
+    "en": "What have you been up to?",
+    "ar": "ماذا كنت تفعل مؤخراً؟",
+    "word": "up to",
+    "meaning": "تفعل / تنشغل بـ",
+    "options": [
+      "تفعل / تنشغل بـ",
+      "تتذكر",
+      "تشتري"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "تُستخدم للسؤال عمّا استجد في حياة شخص."
+  },
+  {
+    "en": "It has been a long time!",
+    "ar": "مر وقت طويل!",
+    "word": "long time",
+    "meaning": "وقت طويل",
+    "options": [
+      "وقت طويل",
+      "وقت قصير",
+      "موعد قريب"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "تقال عند لقاء شخص بعد غياب."
+  },
+  {
+    "en": "I am glad to see you.",
+    "ar": "يسعدني أن أراك.",
+    "word": "glad",
+    "meaning": "سعيد / مسرور",
+    "options": [
+      "سعيد / مسرور",
+      "قلق",
+      "متفاجئ"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "تعبير لطيف عند استقبال شخص."
+  },
+  {
+    "en": "How is everything going?",
+    "ar": "كيف تسير الأمور؟",
+    "word": "everything",
+    "meaning": "كل شيء",
+    "options": [
+      "كل شيء",
+      "لا شيء",
+      "بعض الوقت"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "سؤال عام للاطمئنان على الأحوال."
+  },
+  {
+    "en": "Things are going pretty well.",
+    "ar": "الأمور تسير على ما يرام.",
+    "word": "pretty well",
+    "meaning": "بشكل جيد إلى حد كبير",
+    "options": [
+      "بشكل جيد إلى حد كبير",
+      "بصعوبة شديدة",
+      "ببطء شديد"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "إجابة طبيعية عن سؤال الأحوال."
+  },
+  {
+    "en": "Sorry, I am a little late.",
+    "ar": "آسف، لقد تأخرت قليلاً.",
+    "word": "late",
+    "meaning": "متأخر",
+    "options": [
+      "متأخر",
+      "مبكر",
+      "مستعد"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "اعتذار بسيط عند الوصول بعد الموعد."
+  },
+  {
+    "en": "No worries, it happens.",
+    "ar": "لا تقلق، فهذا يحدث.",
+    "word": "no worries",
+    "meaning": "لا تقلق",
+    "options": [
+      "لا تقلق",
+      "لا تتحدث",
+      "لا تقترب"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "رد مطمئن على اعتذار."
+  },
+  {
+    "en": "Would you like to join us?",
+    "ar": "هل ترغب في الانضمام إلينا؟",
+    "word": "join",
+    "meaning": "تنضم",
+    "options": [
+      "تنضم",
+      "تغادر",
+      "تنتظر"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "دعوة شخص للمشاركة في نشاط."
+  },
+  {
+    "en": "That would be lovely.",
+    "ar": "سيكون ذلك رائعاً.",
+    "word": "lovely",
+    "meaning": "رائع / جميل",
+    "options": [
+      "رائع / جميل",
+      "مزعج",
+      "مستحيل"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "قبول مهذب لدعوة أو اقتراح."
+  },
+  {
+    "en": "I would love to, but I am busy.",
+    "ar": "يسعدني ذلك، لكنني مشغول.",
+    "word": "busy",
+    "meaning": "مشغول",
+    "options": [
+      "مشغول",
+      "متاح",
+      "مرتاح"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "اعتذار مهذب عن عدم القدرة على المشاركة."
+  },
+  {
+    "en": "Maybe another time.",
+    "ar": "ربما في وقت آخر.",
+    "word": "another time",
+    "meaning": "وقت آخر",
+    "options": [
+      "وقت آخر",
+      "في الحال",
+      "كل يوم"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "اقتراح تأجيل اللقاء دون رفض قاطع."
+  },
+  {
+    "en": "What do you think about this idea?",
+    "ar": "ما رأيك في هذه الفكرة؟",
+    "word": "think",
+    "meaning": "تعتقد / ترى",
+    "options": [
+      "تعتقد / ترى",
+      "تنسى",
+      "تحتاج"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "طلب رأي شخص بشأن فكرة."
+  },
+  {
+    "en": "That is a good point.",
+    "ar": "هذه نقطة وجيهة.",
+    "word": "point",
+    "meaning": "نقطة",
+    "options": [
+      "نقطة",
+      "مشكلة",
+      "خطة"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "تُظهر تقديرك لرأي المتحدث."
+  },
+  {
+    "en": "I see what you mean.",
+    "ar": "أفهم ما تقصده.",
+    "word": "mean",
+    "meaning": "تقصد",
+    "options": [
+      "تقصد",
+      "تبيع",
+      "تنسى"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "تعبير عن فهم وجهة نظر شخص."
+  },
+  {
+    "en": "Could you explain that again?",
+    "ar": "هل يمكنك شرح ذلك مرة أخرى؟",
+    "word": "explain",
+    "meaning": "يشرح",
+    "options": [
+      "يشرح",
+      "يختصر",
+      "يؤجل"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "طلب إعادة الشرح لفهم الفكرة."
+  },
+  {
+    "en": "I did not catch the last part.",
+    "ar": "لم أسمع الجزء الأخير بوضوح.",
+    "word": "catch",
+    "meaning": "أسمع / ألتقط",
+    "options": [
+      "أسمع / ألتقط",
+      "أكتب",
+      "أوافق"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "تُستخدم عندما يفوتك جزء من الكلام."
+  },
+  {
+    "en": "Let us keep in touch.",
+    "ar": "لنبقَ على تواصل.",
+    "word": "keep in touch",
+    "meaning": "نبقى على تواصل",
+    "options": [
+      "نبقى على تواصل",
+      "نغير المكان",
+      "نغلق الباب"
+    ],
+    "level": "متوسط",
+    "category": "محادثات يومية",
+    "usage": "تقال عند الوداع للحفاظ على العلاقة."
+  },
+  {
+    "en": "I will send you a message.",
+    "ar": "سأرسل لك رسالة.",
+    "word": "message",
+    "meaning": "رسالة",
+    "options": [
+      "رسالة",
+      "فاتورة",
+      "هدية"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "إخبار شخص بأنك ستتواصل معه كتابة."
+  },
+  {
+    "en": "Did you get my message?",
+    "ar": "هل وصلتك رسالتي؟",
+    "word": "get",
+    "meaning": "تستلم / يصلك",
+    "options": [
+      "تستلم / يصلك",
+      "ترسل",
+      "تحذف"
+    ],
+    "level": "مبتدئ",
+    "category": "محادثات يومية",
+    "usage": "للتأكد من وصول رسالة."
   }
 ];
