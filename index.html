@@ -92,6 +92,75 @@
       </div>
     </section>
 
+    <section id="adminPage" class="page" hidden>
+      <div class="section-heading">
+        <div><span class="eyebrow">مساحة المالك فقط</span><h2>لوحة تحكم جملتي</h2></div>
+        <span class="date-chip">VELORA INTERNATIONAL</span>
+      </div>
+      <div class="admin-stats">
+        <div><strong id="adminSentenceCount">0</strong><span>جملة في المكتبة</span></div>
+        <div><strong id="adminUsersCount">—</strong><span>حساب مستخدم</span></div>
+        <div><strong id="adminUpdatedAt">—</strong><span>حالة المكتبة</span></div>
+      </div>
+      <section class="admin-card">
+        <div class="admin-card-heading"><div><span class="eyebrow">هوية جملتي</span><h3>رسالة الترحيب</h3></div><span class="admin-mini-icon">✦</span></div>
+        <label for="adminWelcomeTitle">عنوان الترحيب</label>
+        <input id="adminWelcomeTitle" type="text" maxlength="90" placeholder="أهلاً بك في جملتي!">
+        <label for="adminWelcomeMessage">رسالة الترحيب</label>
+        <textarea id="adminWelcomeMessage" rows="4" maxlength="600" placeholder="اكتب رسالة الترحيب التي يراها المستخدمون..."></textarea>
+        <label for="adminWelcomeSignature">التوقيع</label>
+        <input id="adminWelcomeSignature" type="text" maxlength="140" placeholder="نتمنى لك رحلة تعلّم ممتعة وملهمة.">
+        <button id="saveWelcomeButton" class="secondary-btn full" type="button">حفظ رسالة الترحيب</button>
+      </section>
+      <section class="admin-card">
+        <div class="admin-card-heading"><div><span class="eyebrow">تواصل مع المستخدمين</span><h3>إعلان داخل التطبيق</h3></div><span class="admin-mini-icon">▣</span></div>
+        <label for="adminAnnouncementTitle">عنوان الإعلان</label>
+        <input id="adminAnnouncementTitle" type="text" maxlength="90" placeholder="خبر جديد من جملتي">
+        <label for="adminAnnouncementMessage">نص الإعلان</label>
+        <textarea id="adminAnnouncementMessage" rows="3" maxlength="500" placeholder="اكتب إعلاناً قصيراً للمستخدمين..."></textarea>
+        <label class="admin-check"><input id="adminAnnouncementActive" type="checkbox"> نشر الإعلان للمستخدمين</label>
+        <button id="saveAnnouncementButton" class="secondary-btn full" type="button">حفظ الإعلان</button>
+      </section>
+      <section class="admin-card">
+        <div class="admin-card-heading"><div><span class="eyebrow">مكتبة المحتوى</span><h3>إدارة الجمل</h3></div><span class="admin-mini-icon">Aa</span></div>
+        <p class="hint">يمكنك استيراد المكتبة الأساسية مرة واحدة، ثم إضافة الجمل وتعديلها أو حذفها. التغييرات المحفوظة هنا تظهر للمستخدمين عند تحديث المحتوى.</p>
+        <button id="importSentencesButton" class="secondary-btn full" type="button">استيراد مكتبة الـ365 جملة إلى Firestore</button>
+        <div class="setting-divider"></div>
+        <form id="adminSentenceForm" class="admin-form">
+          <input id="adminSentenceId" type="hidden">
+          <label for="adminSentenceEn">الجملة بالإنجليزية</label>
+          <input id="adminSentenceEn" type="text" required maxlength="220" dir="ltr" placeholder="I agree with you.">
+          <label for="adminSentenceAr">الترجمة العربية</label>
+          <input id="adminSentenceAr" type="text" required maxlength="260">
+          <label for="adminSentenceWord">الكلمة المستهدفة</label>
+          <input id="adminSentenceWord" type="text" required maxlength="90" dir="auto">
+          <label for="adminSentenceMeaning">المعنى الصحيح</label>
+          <input id="adminSentenceMeaning" type="text" required maxlength="100">
+          <div class="admin-options-grid">
+            <div><label for="adminOption1">الاختيار الأول</label><input id="adminOption1" type="text" required maxlength="100"></div>
+            <div><label for="adminOption2">الاختيار الثاني</label><input id="adminOption2" type="text" required maxlength="100"></div>
+            <div><label for="adminOption3">الاختيار الثالث</label><input id="adminOption3" type="text" required maxlength="100"></div>
+          </div>
+          <label for="adminSentenceLevel">المستوى</label>
+          <select id="adminSentenceLevel"><option>مبتدئ</option><option>متوسط</option><option>متقدم</option></select>
+          <label for="adminSentenceCategory">التصنيف</label>
+          <select id="adminSentenceCategory">
+            <option>محادثات يومية</option><option>العمل والمقابلات</option><option>الدراسة والجامعة</option><option>السفر والتنقل</option><option>الحياة والتواصل الاجتماعي</option>
+          </select>
+          <label for="adminSentenceUsage">متى تستخدم الجملة؟</label>
+          <textarea id="adminSentenceUsage" rows="2" required maxlength="300"></textarea>
+          <div class="admin-form-actions">
+            <button class="info-primary" id="saveSentenceButton" type="submit">إضافة الجملة</button>
+            <button class="secondary-btn" id="cancelSentenceEdit" type="button" hidden>إلغاء التعديل</button>
+          </div>
+        </form>
+        <div class="setting-divider"></div>
+        <label for="adminSentenceSearch">البحث في الجمل</label>
+        <input id="adminSentenceSearch" type="search" placeholder="ابحث بالإنجليزية أو العربية...">
+        <div id="adminSentenceList" class="admin-sentence-list"></div>
+      </section>
+    </section>
+
     <footer>جملتي | Jomlati <span>♥</span> أحد منتجات VELORA INTERNATIONAL<br><small class="footer-tagline">A VELORA INTERNATIONAL PRODUCT</small></footer>
   </main>
   <div class="menu-scrim" id="menuScrim" hidden></div>
@@ -104,9 +173,14 @@
       <strong>أهلاً بك في جملتي</strong>
       <span>اختر ما تريد القيام به</span>
     </div>
+    <div class="menu-account" id="menuAccountSummary" hidden>
+      <strong id="menuAccountEmail"></strong>
+      <small id="menuAccountRole">حساب جملتي</small>
+    </div>
     <nav class="menu-links" aria-label="خيارات الموقع">
       <button class="menu-link" id="menuLoginButton" type="button"><span class="menu-link-icon">✉</span><span><strong>تسجيل الدخول بالبريد الإلكتروني</strong><small>الدخول إلى حسابك</small></span><b>‹</b></button>
       <button class="menu-link" id="menuLogoutButton" type="button" disabled aria-disabled="true"><span class="menu-link-icon">↪</span><span><strong>تسجيل الخروج</strong><small>الخروج من حسابك الحالي</small></span><b>‹</b></button>
+      <button class="menu-link" id="menuAdminButton" type="button" hidden><span class="menu-link-icon">✦</span><span><strong>لوحة تحكم المالك</strong><small>إدارة محتوى جملتي</small></span><b>‹</b></button>
       <button class="menu-link" id="menuWhatsAppButton" type="button"><span class="menu-link-icon whatsapp-icon">✆</span><span><strong>تواصل معنا عبر واتساب</strong><small>نحن هنا لمساعدتك</small></span><b>‹</b></button>
       <button class="menu-link" id="menuSettingsButton" type="button"><span class="menu-link-icon">⚙</span><span><strong>إعدادات الموقع</strong><small>تخصيص تجربة التعلّم</small></span><b>‹</b></button>
     </nav>
@@ -126,12 +200,30 @@
   </div>
 
   <div class="info-overlay" id="loginModal" hidden>
-    <section class="info-dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <section class="info-dialog auth-dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
       <button class="info-close" type="button" data-close-modal="loginModal" aria-label="إغلاق">×</button>
       <span class="info-symbol">✉</span>
       <h2 id="loginTitle">تسجيل الدخول بالبريد الإلكتروني</h2>
-      <p>سيتم تفعيل حسابات البريد الإلكتروني بعد ربط خدمة تسجيل دخول آمنة خاصة بتطبيق جملتي. لم نفعّل النموذج بعد، لذلك لن نطلب منك كلمة مرور قبل اكتمال الربط.</p>
-      <button class="info-primary" type="button" data-close-modal="loginModal">حسناً</button>
+      <p class="auth-intro">ادخل إلى حسابك في جملتي، أو أنشئ حساباً جديداً لتبدأ حفظ تقدمك.</p>
+      <div id="authMessage" class="auth-message" role="status" aria-live="polite" hidden></div>
+      <form id="authForm" class="auth-form">
+        <label for="authEmail">البريد الإلكتروني</label>
+        <input id="authEmail" type="email" autocomplete="username" required maxlength="180" placeholder="name@example.com" dir="ltr">
+        <label for="authPassword">كلمة المرور</label>
+        <input id="authPassword" type="password" autocomplete="current-password" required minlength="6" maxlength="128" placeholder="ستة أحرف على الأقل">
+        <div id="authPasswordConfirmWrap" hidden>
+          <label for="authPasswordConfirm">تأكيد كلمة المرور</label>
+          <input id="authPasswordConfirm" type="password" autocomplete="new-password" minlength="6" maxlength="128">
+        </div>
+        <button id="authSubmit" class="info-primary" type="submit">تسجيل الدخول</button>
+      </form>
+      <button id="authModeToggle" class="auth-text-button" type="button">ليس لديك حساب؟ أنشئ حساباً</button>
+      <button id="authResetButton" class="auth-text-button" type="button">نسيت كلمة المرور؟</button>
+      <div id="authUidPanel" class="auth-uid-panel" hidden>
+        <b>معرّف حسابك (UID)</b>
+        <code id="authUidValue"></code>
+        <button id="copyAuthUid" class="secondary-btn full" type="button">نسخ معرّف الحساب</button>
+      </div>
     </section>
   </div>
 
@@ -148,5 +240,6 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="sentences.js"></script>
   <script src="app.js"></script>
+  <script type="module" src="firebase-app.js"></script>
 </body>
 </html>
