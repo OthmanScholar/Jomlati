@@ -157,7 +157,7 @@ $("authForm").addEventListener("submit", async (event) => {
       const credential = await signInWithEmailAndPassword(auth, email, password);
       await saveUserProfile(credential.user);
       $("authUidValue").textContent = credential.user.uid;
-      $("authUidPanel").hidden = !OWNER_UID;
+      $("authUidPanel").hidden = Boolean(OWNER_UID) && !ownerSignedIn();
       showAuthMessage("تم تسجيل الدخول بنجاح.", "success");
       setTimeout(() => { $("loginModal").hidden = true; }, 900);
     }
@@ -432,7 +432,6 @@ onAuthStateChanged(auth, async (user) => {
 $("authModeToggle").addEventListener("click", () => {
   $("authUidPanel").hidden = true;
 });
-$("menuAdminButton").addEventListener("click", async () => {});
 $("authUidPanel").hidden = true;
 $("authUidValue").textContent = "";
 
