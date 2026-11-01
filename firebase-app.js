@@ -19,7 +19,7 @@ const firebaseConfig = {
 };
 
 // Set this only after the owner account has been created in Firebase Authentication.
-const OWNER_UID = "";
+const OWNER_UID = "VELqTJteQHegrYHhFHSzDYTxLNh2";
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
