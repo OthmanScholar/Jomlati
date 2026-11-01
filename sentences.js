@@ -1,4 +1,4 @@
-/* 262 reviewed learning prompts for Jomlati MVP. */
+/* 282 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3490,5 +3490,206 @@ const sentences = [
     "level": "متقدم",
     "category": "الحياة والتواصل الاجتماعي",
     "usage": "للتعبير عن أثر التقدير والامتنان في العلاقات."
+  }
+,
+  {
+    "en": "I would like to book a window seat.",
+    "ar": "أود حجز مقعد بجانب النافذة.",
+    "word": "window seat",
+    "meaning": "مقعد بجانب النافذة",
+    "options": ["مقعد بجانب النافذة","مقعد في الممر","مقعد أمامي"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "لطلب مقعد محدد عند حجز تذكرة الطيران."
+  },
+  {
+    "en": "Where can I collect my luggage?",
+    "ar": "أين يمكنني استلام أمتعتي؟",
+    "word": "collect",
+    "meaning": "أستلم",
+    "options": ["أستلم","أحجز","أفحص"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للسؤال عن مكان استلام الحقائب في المطار."
+  },
+  {
+    "en": "Our flight has been delayed by two hours.",
+    "ar": "تأخرت رحلتنا ساعتين.",
+    "word": "delayed",
+    "meaning": "تأخرت",
+    "options": ["تأخرت","أُلغيت","وصلت مبكراً"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للتحدث عن تأخر موعد إقلاع الرحلة."
+  },
+  {
+    "en": "Could you tell me which platform the train leaves from?",
+    "ar": "هل يمكنك إخباري من أي رصيف ينطلق القطار؟",
+    "word": "platform",
+    "meaning": "رصيف القطار",
+    "options": ["رصيف القطار","موقف الحافلات","صالة الوصول"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للاستفسار عن رصيف المغادرة في محطة القطار."
+  },
+  {
+    "en": "I need to exchange some money before the trip.",
+    "ar": "أحتاج إلى صرف بعض المال قبل الرحلة.",
+    "word": "exchange",
+    "meaning": "أصرف / أبدّل",
+    "options": ["أصرف / أبدّل","أستعير","أخفي"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للسؤال عن تحويل العملة قبل السفر."
+  },
+  {
+    "en": "Is breakfast included in the room price?",
+    "ar": "هل الإفطار مشمول في سعر الغرفة؟",
+    "word": "included",
+    "meaning": "مشمول",
+    "options": ["مشمول","محجوز","متاح لاحقاً"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للاستفسار عن الخدمات المشمولة في حجز الفندق."
+  },
+  {
+    "en": "We have to check out before eleven o'clock.",
+    "ar": "علينا تسجيل المغادرة قبل الساعة الحادية عشرة.",
+    "word": "check out",
+    "meaning": "تسجيل المغادرة",
+    "options": ["تسجيل المغادرة","تسجيل الوصول","طلب الطعام"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن موعد مغادرة الفندق."
+  },
+  {
+    "en": "The bus stop is opposite the museum.",
+    "ar": "موقف الحافلات مقابل المتحف.",
+    "word": "opposite",
+    "meaning": "مقابل",
+    "options": ["مقابل","بجانب","خلف"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "لوصف موقع موقف الحافلات."
+  },
+  {
+    "en": "Please let me know when we reach the station.",
+    "ar": "من فضلك أخبرني عندما نصل إلى المحطة.",
+    "word": "reach",
+    "meaning": "نصل إلى",
+    "options": ["نصل إلى","نغادر","نمر بجانب"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لطلب التنبيه عند الوصول إلى الوجهة."
+  },
+  {
+    "en": "I prefer to travel with a small backpack.",
+    "ar": "أفضل السفر بحقيبة ظهر صغيرة.",
+    "word": "backpack",
+    "meaning": "حقيبة ظهر",
+    "options": ["حقيبة ظهر","حقيبة سفر كبيرة","محفظة نقود"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن نوع الحقيبة المفضلة أثناء السفر."
+  },
+  {
+    "en": "The hotel is within walking distance of the beach.",
+    "ar": "يقع الفندق على مسافة يمكن قطعها سيراً من الشاطئ.",
+    "word": "walking distance",
+    "meaning": "مسافة مشياً على الأقدام",
+    "options": ["مسافة مشياً على الأقدام","مسافة بالقطار","طريق سريع"],
+    "level": "متقدم",
+    "category": "السفر والتنقل",
+    "usage": "لوصف قرب الفندق من مكان سياحي."
+  },
+  {
+    "en": "I have a reservation under the name of Ahmed.",
+    "ar": "لدي حجز باسم أحمد.",
+    "word": "reservation",
+    "meaning": "حجز",
+    "options": ["حجز","شكوى","فاتورة"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "لتأكيد حجز الفندق أو المطعم باسمك."
+  },
+  {
+    "en": "Could you recommend a reliable taxi service?",
+    "ar": "هل يمكنك أن ترشح لي خدمة سيارات أجرة موثوقة؟",
+    "word": "reliable",
+    "meaning": "موثوقة",
+    "options": ["موثوقة","مكلفة","بعيدة"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لطلب توصية بوسيلة نقل يمكن الاعتماد عليها."
+  },
+  {
+    "en": "We missed the connection because the first train was late.",
+    "ar": "فاتنا القطار الواصل لأن القطار الأول تأخر.",
+    "word": "connection",
+    "meaning": "الوصلة / الرحلة المتصلة",
+    "options": ["الوصلة / الرحلة المتصلة","المقعد المحجوز","تذكرة العودة"],
+    "level": "متقدم",
+    "category": "السفر والتنقل",
+    "usage": "لشرح فوات وسيلة النقل التالية بسبب التأخير."
+  },
+  {
+    "en": "Please keep your passport in a safe place.",
+    "ar": "يرجى الاحتفاظ بجواز سفرك في مكان آمن.",
+    "word": "safe",
+    "meaning": "آمن",
+    "options": ["آمن","مزدحم","مفتوح"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للتذكير بحفظ وثائق السفر المهمة."
+  },
+  {
+    "en": "The tour guide explained the history of the old city.",
+    "ar": "شرح المرشد السياحي تاريخ المدينة القديمة.",
+    "word": "tour guide",
+    "meaning": "مرشد سياحي",
+    "options": ["مرشد سياحي","سائق حافلة","موظف استقبال"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للتحدث عن الشخص الذي يرافق الزوار ويشرح المعالم."
+  },
+  {
+    "en": "We should arrive at the airport at least three hours early.",
+    "ar": "ينبغي أن نصل إلى المطار قبل موعد الرحلة بثلاث ساعات على الأقل.",
+    "word": "at least",
+    "meaning": "على الأقل",
+    "options": ["على الأقل","بالضبط","في موعد أقصاه"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للتعبير عن الحد الأدنى من الوقت اللازم قبل الرحلة."
+  },
+  {
+    "en": "Can I change my ticket to an earlier date?",
+    "ar": "هل يمكنني تغيير تذكرتي إلى تاريخ أبكر؟",
+    "word": "earlier",
+    "meaning": "أبكر",
+    "options": ["أبكر","متأخر","أطول"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لطلب تعديل موعد التذكرة إلى وقت أسبق."
+  },
+  {
+    "en": "The road was closed because of construction work.",
+    "ar": "كان الطريق مغلقاً بسبب أعمال الإنشاء.",
+    "word": "construction",
+    "meaning": "الإنشاء / البناء",
+    "options": ["الإنشاء / البناء","الطقس","الازدحام"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لوصف سبب إغلاق طريق أثناء التنقل."
+  },
+  {
+    "en": "I always check the weather before packing.",
+    "ar": "أتحقق دائماً من الطقس قبل تجهيز الأمتعة.",
+    "word": "packing",
+    "meaning": "تجهيز الأمتعة",
+    "options": ["تجهيز الأمتعة","حجز التذاكر","تغيير العملة"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن الاستعداد للسفر."
   }
 ];
