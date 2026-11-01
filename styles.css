@@ -190,3 +190,82 @@
 
 .menu-link:disabled{opacity:.48;cursor:not-allowed;transform:none;background:#f7f9fa}
 .menu-link:disabled:hover{border-color:#e3edf1;transform:none}
+
+
+/* Firebase account forms and owner-only content dashboard */
+.auth-dialog{max-height:min(88vh,900px);overflow-y:auto}
+.auth-intro{margin-bottom:16px!important}
+.auth-form{display:grid;gap:9px;text-align:right}
+.auth-form label,.admin-card>label,.admin-form>label{display:block;color:#254b60;font-size:13px;font-weight:800;margin-top:7px}
+.auth-form input,.admin-card input,.admin-card textarea,.admin-card select,.admin-form input,.admin-form textarea,.admin-form select{
+  width:100%;min-width:0;border:1px solid #cad9e1;border-radius:11px;
+  padding:12px 13px;background:#fff;color:#173b50;font:inherit;font-size:15px;
+  outline:none;box-sizing:border-box;
+}
+.auth-form input:focus,.admin-card input:focus,.admin-card textarea:focus,.admin-card select:focus,.admin-form input:focus,.admin-form textarea:focus,.admin-form select:focus{
+  border-color:#2c9c92;box-shadow:0 0 0 3px rgba(44,156,146,.12)
+}
+.auth-form .info-primary{margin-top:10px}
+.auth-text-button{
+  display:block;margin:10px auto 0;border:0;background:none;
+  color:#176e82;font:inherit;font-size:13px;font-weight:800;cursor:pointer
+}
+.auth-message{
+  padding:11px 13px;border-radius:12px;margin:0 0 13px;
+  font-size:13px;line-height:1.7;text-align:right
+}
+.auth-message.info{background:#eef6fa;color:#245c73}
+.auth-message.success{background:#e8f7f0;color:#087354}
+.auth-message.error{background:#fff0ee;color:#a4342c}
+.auth-uid-panel{margin-top:16px;padding:13px;border:1px dashed #9bbec9;background:#f4f9fa;border-radius:13px;text-align:right}
+.auth-uid-panel b{display:block;color:#173b50;font-size:13px;margin-bottom:8px}
+.auth-uid-panel code{display:block;direction:ltr;text-align:left;overflow-wrap:anywhere;color:#145f78;font-size:12px;padding:7px 0}
+.menu-account{margin:0 0 13px;padding:12px 13px;border-radius:13px;background:#eff7f7;border:1px solid #dbeceb}
+.menu-account strong{display:block;color:#15465d;font-size:13px;direction:ltr;text-align:right;overflow-wrap:anywhere}
+.menu-account small{display:block;margin-top:5px;color:#13816f;font-size:11px;font-weight:700}
+.announcement-banner{
+  display:flex;gap:13px;align-items:flex-start;margin:0 0 18px;
+  padding:15px 17px;border:1px solid #b7ddd5;border-right:5px solid #279b8c;
+  border-radius:16px;background:#effaf7;color:#174b59
+}
+.announcement-mark{font-size:23px;color:#c18c2c}
+.announcement-banner strong{display:block;font-size:15px}
+.announcement-banner p{margin:5px 0 0;font-size:14px;line-height:1.7}
+.admin-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.admin-stats>div{padding:16px;border-radius:15px;background:#eef4f7;text-align:center}
+.admin-stats strong{display:block;color:#102d43;font-size:24px}
+.admin-stats span{display:block;margin-top:5px;color:#5e7887;font-size:12px}
+.admin-card{margin:16px 0;padding:23px;border:1px solid #dce7ec;border-radius:19px;background:#fff;box-shadow:0 8px 24px rgba(16,45,67,.045)}
+.admin-card-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+.admin-card-heading h3{margin:4px 0 0;color:#102d43;font-size:21px}
+.admin-mini-icon{width:43px;height:43px;border-radius:13px;background:#eaf7f4;color:#168879;display:grid;place-items:center;font-size:21px;font-weight:800}
+.admin-card textarea,.admin-form textarea{resize:vertical;line-height:1.7}
+.admin-card .secondary-btn.full{margin-top:13px}
+.admin-check{display:flex!important;align-items:center;gap:9px;margin-top:13px!important}
+.admin-check input{width:18px;height:18px;accent-color:#168879}
+.admin-form{display:grid;gap:8px}
+.admin-options-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.admin-options-grid>div{min-width:0}
+.admin-options-grid label{display:block;color:#254b60;font-size:12px;font-weight:800;margin:7px 0}
+.admin-form-actions{display:flex;gap:9px;align-items:center;margin-top:8px}
+.admin-form-actions .info-primary{flex:1}
+.admin-sentence-list{display:grid;gap:9px;margin-top:13px}
+.admin-sentence-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px;border:1px solid #e0e9ee;border-radius:13px;background:#fbfdfe}
+.admin-sentence-row>div:first-child{min-width:0;flex:1}
+.admin-sentence-row strong{display:block;color:#163d53;font-size:14px;direction:ltr;text-align:left;overflow-wrap:anywhere}
+.admin-sentence-row small{display:block;margin-top:5px;color:#718692;font-size:11px;line-height:1.6}
+.admin-row-actions{display:flex;gap:6px;flex-shrink:0}
+.admin-row-actions .secondary-btn,.admin-row-actions .danger-btn{padding:8px 10px;font-size:12px}
+@media(max-width:600px){
+  .admin-card{padding:18px 15px}
+  .admin-stats{gap:6px}
+  .admin-stats>div{padding:12px 6px}
+  .admin-stats strong{font-size:20px}
+  .admin-stats span{font-size:10px}
+  .admin-card-heading h3{font-size:19px}
+  .admin-options-grid{grid-template-columns:1fr}
+  .admin-sentence-row{align-items:flex-start;flex-direction:column}
+  .admin-row-actions{width:100%}
+  .admin-row-actions button{flex:1}
+  .auth-dialog{padding:33px 20px 23px}
+}
