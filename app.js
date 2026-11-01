@@ -44,8 +44,9 @@ function setQuestion(){
   const options=[...s.options].sort((a,b)=>a.localeCompare(b,"ar"));
   options.forEach(option=>{const b=document.createElement("button");b.className="answer";b.textContent=option;b.addEventListener("click",()=>checkAnswer(option,b));answers.appendChild(b);});
   if(state.quizDone.includes(todayKey)){
-    [...answers.children].forEach(b=>{b.disabled=true;if(b.textContent===s.meaning)b.classList.add("correct");});
-    $("quizFeedback").textContent="أنجزت اختبار اليوم. أحسنت!";$("quizFeedback").className="feedback good";
+    [...answers.children].forEach(b=>{if(b.textContent===s.meaning)b.classList.add("correct");});
+    $("quizFeedback").textContent="أنجزت اختبار اليوم. أحسنت! يمكنك مراجعة الخيارات، ولن تُحتسب إجابة أخرى اليوم.";
+    $("quizFeedback").className="feedback good";
   }
 }
 function renderSentence(){
@@ -55,7 +56,13 @@ function renderSentence(){
   setQuestion();
 }
 function checkAnswer(option,button){
-  const s=current();if(state.quizDone.includes(todayKey))return;
+  const s=current();
+  if(state.quizDone.includes(todayKey)){
+    document.querySelectorAll(".answer").forEach(b=>b.classList.toggle("correct",b.textContent===s.meaning));
+    $("quizFeedback").textContent="لقد أكملت اختبار اليوم بالفعل. الإجابة الصحيحة هي: "+s.meaning+" — عد غدًا لاختبار جديد!";
+    $("quizFeedback").className="feedback good";
+    return;
+  }
   document.querySelectorAll(".answer").forEach(b=>b.disabled=true);
   if(option===s.meaning){button.classList.add("correct");$("quizFeedback").textContent="أحسنت! إجابة صحيحة 🎉";$("quizFeedback").className="feedback good";state.correct++;}
   else{button.classList.add("wrong");document.querySelectorAll(".answer").forEach(b=>{if(b.textContent===s.meaning)b.classList.add("correct")});$("quizFeedback").textContent=`ليست هذه الإجابة. المعنى الصحيح: ${s.meaning}`;$("quizFeedback").className="feedback bad";}
