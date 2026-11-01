@@ -1,4 +1,4 @@
-/* 317 reviewed learning prompts for Jomlati MVP. */
+/* 332 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -4043,5 +4043,156 @@ const sentences = [
     "level": "متقدم",
     "category": "العمل والمقابلات",
     "usage": "لوصف حل مشكلة في بيئة العمل بالتواصل."
+  }
+,
+  {
+    "en": "I usually start my workday by checking my emails.",
+    "ar": "عادةً ما أبدأ يوم عملي بتفقد رسائلي الإلكترونية.",
+    "word": "workday",
+    "meaning": "يوم العمل",
+    "options": ["يوم العمل","يوم العطلة","موعد السفر"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "لشرح روتينك اليومي في العمل."
+  },
+  {
+    "en": "The meeting has been moved to the conference room.",
+    "ar": "تم نقل الاجتماع إلى قاعة المؤتمرات.",
+    "word": "conference room",
+    "meaning": "قاعة المؤتمرات",
+    "options": ["قاعة المؤتمرات","غرفة الاستراحة","مكتب المدير"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لإبلاغ الزملاء بتغيير مكان الاجتماع."
+  },
+  {
+    "en": "I need to request a day off next month.",
+    "ar": "أحتاج إلى طلب إجازة ليوم واحد الشهر المقبل.",
+    "word": "day off",
+    "meaning": "يوم إجازة",
+    "options": ["يوم إجازة","يوم تدريب","يوم عمل إضافي"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "لطلب يوم إجازة من جهة العمل."
+  },
+  {
+    "en": "Please keep me informed about any changes.",
+    "ar": "يرجى إبقائي على اطلاع بأي تغييرات.",
+    "word": "informed",
+    "meaning": "على اطلاع",
+    "options": ["على اطلاع","خارج المكتب","قيد التدريب"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لطلب تحديثات عند حدوث تغييرات في العمل."
+  },
+  {
+    "en": "Our client asked for a detailed cost estimate.",
+    "ar": "طلب عميلنا تقديراً مفصلاً للتكلفة.",
+    "word": "estimate",
+    "meaning": "تقدير",
+    "options": ["تقدير","فاتورة مدفوعة","موعد نهائي"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن تقديم تقدير مالي قبل تنفيذ العمل."
+  },
+  {
+    "en": "I am willing to take on additional responsibilities.",
+    "ar": "أنا مستعد لتولي مسؤوليات إضافية.",
+    "word": "additional",
+    "meaning": "إضافية",
+    "options": ["إضافية","سابقة","مؤقتة"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لإظهار الاستعداد لتحمل مهام جديدة."
+  },
+  {
+    "en": "The job requires strong problem-solving skills.",
+    "ar": "تتطلب الوظيفة مهارات قوية في حل المشكلات.",
+    "word": "requires",
+    "meaning": "تتطلب",
+    "options": ["تتطلب","تتجاهل","تؤجل"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لوصف المهارات اللازمة لوظيفة معينة."
+  },
+  {
+    "en": "I received an offer letter this morning.",
+    "ar": "تلقيت خطاب عرض وظيفي هذا الصباح.",
+    "word": "offer letter",
+    "meaning": "خطاب عرض وظيفي",
+    "options": ["خطاب عرض وظيفي","خطاب استقالة","خطاب شكوى"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن استلام عرض رسمي للعمل."
+  },
+  {
+    "en": "Could you confirm the salary range for this role?",
+    "ar": "هل يمكنك تأكيد نطاق الراتب لهذه الوظيفة؟",
+    "word": "salary range",
+    "meaning": "نطاق الراتب",
+    "options": ["نطاق الراتب","ساعات الدوام","مدة التدريب"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "للاستفسار عن الراتب المتوقع للوظيفة."
+  },
+  {
+    "en": "I make sure that every task is completed accurately.",
+    "ar": "أتأكد من إنجاز كل مهمة بدقة.",
+    "word": "accurately",
+    "meaning": "بدقة",
+    "options": ["بدقة","بسرعة فقط","على نحو عشوائي"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للتعبير عن الحرص على جودة تنفيذ المهام."
+  },
+  {
+    "en": "The staff meeting takes place every Monday.",
+    "ar": "يُعقد اجتماع الموظفين كل يوم اثنين.",
+    "word": "takes place",
+    "meaning": "يُعقد / يحدث",
+    "options": ["يُعقد / يحدث","يُلغى","يتأخر"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "لشرح موعد اجتماع دوري في المؤسسة."
+  },
+  {
+    "en": "I have been promoted to team leader.",
+    "ar": "تمت ترقيتي إلى قائد فريق.",
+    "word": "promoted",
+    "meaning": "تمت ترقيتي",
+    "options": ["تمت ترقيتي","تم نقلي","تم تدريبي"],
+    "level": "متوسط",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن الحصول على ترقية مهنية."
+  },
+  {
+    "en": "We are looking for a practical solution to this problem.",
+    "ar": "نبحث عن حل عملي لهذه المشكلة.",
+    "word": "solution",
+    "meaning": "حل",
+    "options": ["حل","سبب","تأخير"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للتعبير عن البحث عن طريقة قابلة للتطبيق."
+  },
+  {
+    "en": "Please review the document before you sign it.",
+    "ar": "يرجى مراجعة المستند قبل توقيعه.",
+    "word": "review",
+    "meaning": "يراجع",
+    "options": ["يراجع","يمزق","يرسل"],
+    "level": "مبتدئ",
+    "category": "العمل والمقابلات",
+    "usage": "للطلب من شخص التحقق من مستند قبل التوقيع."
+  },
+  {
+    "en": "Good time management helps me stay productive.",
+    "ar": "تساعدني الإدارة الجيدة للوقت على الحفاظ على إنتاجيتي.",
+    "word": "productive",
+    "meaning": "منتج",
+    "options": ["منتج","مرهق","متردد"],
+    "level": "متقدم",
+    "category": "العمل والمقابلات",
+    "usage": "للحديث عن تنظيم الوقت وتحقيق نتائج أفضل."
   }
 ];
