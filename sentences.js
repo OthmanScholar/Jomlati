@@ -1,4 +1,4 @@
-/* 282 reviewed learning prompts for Jomlati MVP. */
+/* 297 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3691,5 +3691,156 @@ const sentences = [
     "level": "متوسط",
     "category": "السفر والتنقل",
     "usage": "للحديث عن الاستعداد للسفر."
+  }
+,
+  {
+    "en": "Where is the nearest information desk?",
+    "ar": "أين أقرب مكتب للاستعلامات؟",
+    "word": "nearest",
+    "meaning": "الأقرب",
+    "options": ["الأقرب","الأبعد","الأكبر"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للسؤال عن مكان مكتب المساعدة في محطة أو مطار."
+  },
+  {
+    "en": "I would like to reserve a rental car for three days.",
+    "ar": "أود حجز سيارة مستأجرة لمدة ثلاثة أيام.",
+    "word": "rental car",
+    "meaning": "سيارة مستأجرة",
+    "options": ["سيارة مستأجرة","سيارة أجرة","حافلة سياحية"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لطلب استئجار سيارة خلال الرحلة."
+  },
+  {
+    "en": "Does this train stop at the central station?",
+    "ar": "هل يتوقف هذا القطار في المحطة المركزية؟",
+    "word": "stop",
+    "meaning": "يتوقف",
+    "options": ["يتوقف","ينطلق","يتأخر"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للتأكد من محطات توقف القطار."
+  },
+  {
+    "en": "I booked the hotel online last night.",
+    "ar": "حجزت الفندق عبر الإنترنت الليلة الماضية.",
+    "word": "booked",
+    "meaning": "حجزت",
+    "options": ["حجزت","ألغيت","دفعت نقداً"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن إتمام حجز الإقامة عبر الإنترنت."
+  },
+  {
+    "en": "Could you show me the way to the old town?",
+    "ar": "هل يمكنك أن تدلني على الطريق إلى البلدة القديمة؟",
+    "word": "the way",
+    "meaning": "الطريق",
+    "options": ["الطريق","السعر","الموعد"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "لطلب إرشادات الوصول إلى منطقة سياحية."
+  },
+  {
+    "en": "My suitcase is too heavy to carry.",
+    "ar": "حقيبتي ثقيلة جداً بحيث يصعب حملها.",
+    "word": "suitcase",
+    "meaning": "حقيبة سفر",
+    "options": ["حقيبة سفر","جواز سفر","تذكرة سفر"],
+    "level": "مبتدئ",
+    "category": "السفر والتنقل",
+    "usage": "للتعبير عن مشكلة في حمل الأمتعة."
+  },
+  {
+    "en": "We need to go through passport control first.",
+    "ar": "نحتاج إلى المرور عبر مراقبة جوازات السفر أولاً.",
+    "word": "passport control",
+    "meaning": "مراقبة جوازات السفر",
+    "options": ["مراقبة جوازات السفر","استلام الأمتعة","بوابة الصعود"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لوصف أحد إجراءات الدخول في المطار."
+  },
+  {
+    "en": "The ferry departs every thirty minutes.",
+    "ar": "تغادر العبّارة كل ثلاثين دقيقة.",
+    "word": "ferry",
+    "meaning": "عبّارة",
+    "options": ["عبّارة","قطار","طائرة"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للسؤال أو الحديث عن مواعيد النقل البحري."
+  },
+  {
+    "en": "Please fasten your seat belt during takeoff.",
+    "ar": "يرجى ربط حزام الأمان أثناء الإقلاع.",
+    "word": "fasten",
+    "meaning": "اربط",
+    "options": ["اربط","افتح","ارفع"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "تعليمات السلامة على متن الطائرة."
+  },
+  {
+    "en": "The reception staff helped us find a nearby pharmacy.",
+    "ar": "ساعدنا موظفو الاستقبال في العثور على صيدلية قريبة.",
+    "word": "nearby",
+    "meaning": "قريبة",
+    "options": ["قريبة","مغلقة","مزدحمة"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لوصف طلب مساعدة موظفي الفندق في العثور على خدمة قريبة."
+  },
+  {
+    "en": "We decided to explore the city on foot.",
+    "ar": "قررنا استكشاف المدينة سيراً على الأقدام.",
+    "word": "explore",
+    "meaning": "نستكشف",
+    "options": ["نستكشف","نغادر","نحجز"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن زيارة الأماكن سيراً."
+  },
+  {
+    "en": "Keep a copy of your travel documents in your email.",
+    "ar": "احتفظ بنسخة من وثائق سفرك في بريدك الإلكتروني.",
+    "word": "documents",
+    "meaning": "وثائق",
+    "options": ["وثائق","ملابس","خرائط"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لنصيحة تتعلق بحفظ نسخ احتياطية من وثائق السفر."
+  },
+  {
+    "en": "The guide warned us about strong currents near the shore.",
+    "ar": "حذرنا المرشد من التيارات القوية قرب الشاطئ.",
+    "word": "currents",
+    "meaning": "تيارات مائية",
+    "options": ["تيارات مائية","أمواج صغيرة","رياح خفيفة"],
+    "level": "متقدم",
+    "category": "السفر والتنقل",
+    "usage": "للتنبيه إلى مخاطر البحر أثناء زيارة الشاطئ."
+  },
+  {
+    "en": "We had to take a different route because of traffic.",
+    "ar": "اضطررنا إلى سلوك طريق مختلف بسبب حركة المرور.",
+    "word": "route",
+    "meaning": "مسار / طريق",
+    "options": ["مسار / طريق","تذكرة","محطة"],
+    "level": "متوسط",
+    "category": "السفر والتنقل",
+    "usage": "لشرح تغيير الطريق بسبب الازدحام."
+  },
+  {
+    "en": "The local market is famous for handmade souvenirs.",
+    "ar": "يشتهر السوق المحلي بالتذكارات المصنوعة يدوياً.",
+    "word": "souvenirs",
+    "meaning": "تذكارات",
+    "options": ["تذكارات","أمتعة","وجبات"],
+    "level": "متقدم",
+    "category": "السفر والتنقل",
+    "usage": "للحديث عن شراء الهدايا التذكارية خلال السفر."
   }
 ];
