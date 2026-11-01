@@ -19,6 +19,7 @@
     <div class="top-actions">
       <span class="streak" title="أيام التعلّم المتتالية">🔥 <b id="streakCount">0</b></span>
       <button class="icon-btn" id="installBtn" hidden aria-label="تثبيت التطبيق" title="تثبيت التطبيق">⬇</button>
+      <button class="menu-trigger" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="sideMenu" title="القائمة">☰</button>
     </div>
   </header>
 
@@ -93,6 +94,57 @@
 
     <footer>جملتي | Jomlati <span>♥</span> أحد منتجات VELORA INTERNATIONAL<br><small class="footer-tagline">A VELORA INTERNATIONAL PRODUCT</small></footer>
   </main>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+  <aside class="side-menu" id="sideMenu" aria-label="القائمة الرئيسية" aria-hidden="true">
+    <div class="side-menu-head">
+      <div class="side-menu-brand"><span class="brand-mark">ج</span><span><strong>جملتي</strong><small>VELORA INTERNATIONAL</small></span></div>
+      <button class="menu-close" id="menuClose" type="button" aria-label="إغلاق القائمة">×</button>
+    </div>
+    <div class="menu-welcome">
+      <strong>أهلاً بك في جملتي</strong>
+      <span>اختر ما تريد القيام به</span>
+    </div>
+    <nav class="menu-links" aria-label="خيارات الموقع">
+      <button class="menu-link" id="menuLoginButton" type="button"><span class="menu-link-icon">✉</span><span><strong>تسجيل الدخول بالبريد الإلكتروني</strong><small>الدخول إلى حسابك</small></span><b>‹</b></button>
+      <button class="menu-link" id="menuLogoutButton" type="button" hidden><span class="menu-link-icon">↪</span><span><strong>تسجيل الخروج</strong><small>الخروج من حسابك الحالي</small></span><b>‹</b></button>
+      <button class="menu-link" id="menuWhatsAppButton" type="button"><span class="menu-link-icon whatsapp-icon">✆</span><span><strong>تواصل معنا عبر واتساب</strong><small>نحن هنا لمساعدتك</small></span><b>‹</b></button>
+      <button class="menu-link" id="menuSettingsButton" type="button"><span class="menu-link-icon">⚙</span><span><strong>إعدادات الموقع</strong><small>تخصيص تجربة التعلّم</small></span><b>‹</b></button>
+    </nav>
+    <div class="side-menu-footer"><strong>VELORA INTERNATIONAL</strong><small>LEARN · GROW · CONNECT</small></div>
+  </aside>
+
+  <div class="welcome-overlay" id="welcomeModal" hidden>
+    <section class="welcome-dialog" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+      <div class="welcome-symbol">ج</div>
+      <p class="welcome-overline">VELORA INTERNATIONAL</p>
+      <h2 id="welcomeTitle">أهلاً بك في جملتي!</h2>
+      <p class="welcome-message">ترحب بك <strong>VELORA INTERNATIONAL</strong> في مساحتك اليومية لتعلّم الإنجليزية. ابدأ بجملة واحدة كل يوم، وطوّر مهاراتك بثقة، واجعل كل خطوة صغيرة تقرّبك من فرص أكبر.</p>
+      <p class="welcome-signature">نتمنى لك رحلة تعلّم ممتعة وملهمة.</p>
+      <button class="welcome-start" id="welcomeStart" type="button">ابدأ رحلتك <span>←</span></button>
+      <small class="welcome-product">جملتي | JOMLATI · A VELORA INTERNATIONAL PRODUCT</small>
+    </section>
+  </div>
+
+  <div class="info-overlay" id="loginModal" hidden>
+    <section class="info-dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="info-close" type="button" data-close-modal="loginModal" aria-label="إغلاق">×</button>
+      <span class="info-symbol">✉</span>
+      <h2 id="loginTitle">تسجيل الدخول بالبريد الإلكتروني</h2>
+      <p>سيتم تفعيل حسابات البريد الإلكتروني بعد ربط خدمة تسجيل دخول آمنة خاصة بتطبيق جملتي. لم نفعّل النموذج بعد، لذلك لن نطلب منك كلمة مرور قبل اكتمال الربط.</p>
+      <button class="info-primary" type="button" data-close-modal="loginModal">حسناً</button>
+    </section>
+  </div>
+
+  <div class="info-overlay" id="whatsappModal" hidden>
+    <section class="info-dialog" role="dialog" aria-modal="true" aria-labelledby="whatsappTitle">
+      <button class="info-close" type="button" data-close-modal="whatsappModal" aria-label="إغلاق">×</button>
+      <span class="info-symbol whatsapp-symbol">✆</span>
+      <h2 id="whatsappTitle">تواصل معنا عبر واتساب</h2>
+      <p>سنضيف هنا رقم التواصل الرسمي لـ VELORA INTERNATIONAL حتى تتمكن من مراسلتنا مباشرة عبر واتساب.</p>
+      <button class="info-primary" type="button" data-close-modal="whatsappModal">حسناً</button>
+    </section>
+  </div>
+
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="sentences.js"></script>
   <script src="app.js"></script>
