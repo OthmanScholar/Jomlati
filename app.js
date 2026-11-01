@@ -102,7 +102,7 @@ menuScrim.addEventListener("click",()=>setMenuOpen(false));
 $("menuLoginButton").addEventListener("click",()=>{setMenuOpen(false);openInfoModal("loginModal");});
 $("menuWhatsAppButton").addEventListener("click",()=>{
   setMenuOpen(false);
-  const number=VELORA_WHATSAPP_NUMBER.replace(/\\D/g,"");
+  const number=VELORA_WHATSAPP_NUMBER.replace(/\D/g,"");
   if(number){window.open("https://wa.me/"+number,"_blank","noopener,noreferrer");}
   else{openInfoModal("whatsappModal");}
 });
