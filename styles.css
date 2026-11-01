@@ -18,3 +18,57 @@
 .card-actions{justify-content:center;flex-wrap:wrap}.card-actions .primary-btn{flex:0 1 260px}
 .footer-tagline{display:inline-block;margin-top:5px;font-size:9px;letter-spacing:1.5px;color:#a5b4bc}
 @media(max-width:600px){.brand-parent{font-size:7px!important;letter-spacing:.8px}.brand-welcome{margin-bottom:8px}.brand-welcome-name{font-size:10px;letter-spacing:1.8px}.brand-welcome-sub{font-size:10px}.hero h1{font-size:25px}.hero h1 em{font-size:.78em}.sentence-en{text-align:center}.card-actions .primary-btn{flex:1 1 100%}}
+
+
+/* Clearer, larger daily quiz and progress panels */
+.quiz-card{
+  padding:30px 32px;
+  border:1px solid #cbdde5;
+  border-top:5px solid var(--blue);
+  border-radius:22px;
+  background:linear-gradient(135deg,#fff 0%,#f2fafb 100%);
+  box-shadow:0 14px 34px rgba(16,45,67,.08);
+}
+.quiz-card .eyebrow{font-size:14px;color:#28647c;font-weight:800}
+.quiz-title h3{font-size:25px;margin-top:6px;color:#102d43}
+.quiz-icon{width:48px;height:48px;border-radius:15px;background:#102d43;color:#55d6bd;font-size:25px}
+.question{margin:24px 0 17px;color:#173b50;font-size:20px;font-weight:700;line-height:1.85}
+.question b{color:#0d6380;font-size:1.05em}
+.answers{gap:12px}
+.answer{
+  min-height:58px;
+  padding:15px 12px;
+  border:1.5px solid #c7d8e1;
+  border-radius:14px;
+  background:#fff;
+  color:#173b50;
+  font-size:18px;
+  font-weight:700;
+  line-height:1.5;
+  transition:background .18s,border-color .18s,transform .18s;
+}
+.answer:hover{border-color:#238a91;background:#eef9f7}
+.answer.correct{background:#dff6ed;border:2px solid #239c7b;color:#075c49}
+.answer.wrong{background:#fff0ee;border:2px solid #d66c61;color:#9e3028}
+.answer:disabled{opacity:1}
+.feedback{min-height:30px;font-size:16px;font-weight:800;line-height:1.7}
+.feedback.good{color:#08775f}
+.feedback.bad{color:#a9342e}
+.quiz-note{font-size:14px;color:#526b79;font-weight:500;line-height:1.8;margin-top:13px}
+.progress-card{padding:26px 28px}
+.progress-card .eyebrow{font-size:13px;color:#426b7d}
+.progress-card h3{font-size:23px}
+.progress-stats strong{font-size:27px}
+.progress-stats span{font-size:13px;color:#526b79;font-weight:600}
+@media(max-width:600px){
+  .quiz-card{padding:23px 18px;border-top-width:4px}
+  .quiz-card .eyebrow{font-size:13px}
+  .quiz-title h3{font-size:23px}
+  .quiz-icon{width:44px;height:44px;font-size:23px}
+  .question{font-size:19px;margin:20px 0 15px}
+  .answer{min-height:56px;padding:14px 15px;font-size:18px;text-align:right}
+  .feedback{font-size:15px}
+  .quiz-note{font-size:13px}
+  .progress-card{padding:22px 17px}
+  .progress-stats span{font-size:11px}
+}
