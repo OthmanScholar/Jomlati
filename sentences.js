@@ -1,4 +1,4 @@
-/* 237 reviewed learning prompts for Jomlati MVP. */
+/* 252 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3238,5 +3238,156 @@ const sentences = [
     "level": "متقدم",
     "category": "الحياة والتواصل الاجتماعي",
     "usage": "للحديث عن دور التطوع في تقوية الروابط المجتمعية."
+  }
+,
+  {
+    "en": "We often gather to celebrate special occasions.",
+    "ar": "غالباً ما نجتمع للاحتفال بالمناسبات الخاصة.",
+    "word": "occasions",
+    "meaning": "المناسبات",
+    "options": ["المناسبات","المشكلات","الواجبات"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن التجمعات في المناسبات."
+  },
+  {
+    "en": "My friend gave me some thoughtful advice.",
+    "ar": "قدم لي صديقي نصيحة قيّمة ومدروسة.",
+    "word": "advice",
+    "meaning": "نصيحة",
+    "options": ["نصيحة","هدية","دعوة"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن تلقي نصيحة من صديق."
+  },
+  {
+    "en": "We should make time for the people we care about.",
+    "ar": "ينبغي أن نخصص وقتاً للأشخاص الذين نهتم بهم.",
+    "word": "care about",
+    "meaning": "نهتم بـ",
+    "options": ["نهتم بـ","نختلف مع","نبتعد عن"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتأكيد على أهمية الاهتمام بالعلاقات."
+  },
+  {
+    "en": "The children played together while the adults talked.",
+    "ar": "لعب الأطفال معاً بينما تحدث الكبار.",
+    "word": "adults",
+    "meaning": "الكبار",
+    "options": ["الكبار","الجيران","الضيوف"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف مشهد في تجمع عائلي."
+  },
+  {
+    "en": "I appreciate your kindness and support.",
+    "ar": "أقدّر لطفك ودعمك.",
+    "word": "appreciate",
+    "meaning": "أقدّر",
+    "options": ["أقدّر","أتجاهل","أرفض"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن الامتنان لشخص."
+  },
+  {
+    "en": "They took a group photo to remember the day.",
+    "ar": "التقطوا صورة جماعية لتذكر ذلك اليوم.",
+    "word": "remember",
+    "meaning": "يتذكر",
+    "options": ["يتذكر","يغير","ينسى"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن توثيق الذكريات المشتركة."
+  },
+  {
+    "en": "A good neighbor respects your privacy.",
+    "ar": "الجار الجيد يحترم خصوصيتك.",
+    "word": "privacy",
+    "meaning": "الخصوصية",
+    "options": ["الخصوصية","الممتلكات","المواعيد"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن احترام الحدود الشخصية."
+  },
+  {
+    "en": "We exchanged phone numbers after the meeting.",
+    "ar": "تبادلنا أرقام الهواتف بعد اللقاء.",
+    "word": "exchanged",
+    "meaning": "تبادلنا",
+    "options": ["تبادلنا","حذفنا","أخفينا"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف التعارف والتواصل بعد لقاء."
+  },
+  {
+    "en": "She encourages her friends to pursue their goals.",
+    "ar": "تشجع أصدقاءها على السعي لتحقيق أهدافهم.",
+    "word": "encourages",
+    "meaning": "تشجع",
+    "options": ["تشجع","تمنع","تنتقد"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن دعم الأصدقاء لبعضهم."
+  },
+  {
+    "en": "The best conversations begin with genuine interest.",
+    "ar": "تبدأ أفضل المحادثات باهتمام صادق.",
+    "word": "genuine",
+    "meaning": "صادق / حقيقي",
+    "options": ["صادق / حقيقي","مؤقت","متردد"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن أهمية الاهتمام الحقيقي بالآخرين."
+  },
+  {
+    "en": "We agreed to meet at the community center.",
+    "ar": "اتفقنا على اللقاء في المركز المجتمعي.",
+    "word": "agreed",
+    "meaning": "اتفقنا",
+    "options": ["اتفقنا","اختلفنا","تأخرنا"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لتحديد مكان لقاء اجتماعي."
+  },
+  {
+    "en": "He introduced me to his closest friends.",
+    "ar": "عرّفني إلى أقرب أصدقائه.",
+    "word": "introduced",
+    "meaning": "عرّف",
+    "options": ["عرّف","استعار","رافق"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن التعارف بين الأصدقاء."
+  },
+  {
+    "en": "Small acts of generosity strengthen communities.",
+    "ar": "تعزز أعمال الكرم البسيطة المجتمعات.",
+    "word": "generosity",
+    "meaning": "الكرم",
+    "options": ["الكرم","القلق","الاختلاف"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن أثر العطاء في المجتمع."
+  },
+  {
+    "en": "Please respect the time we agreed on.",
+    "ar": "يرجى احترام الوقت الذي اتفقنا عليه.",
+    "word": "respect",
+    "meaning": "احترم",
+    "options": ["احترم","غيّر","انسَ"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتأكيد على الالتزام بالمواعيد."
+  },
+  {
+    "en": "They supported each other during difficult times.",
+    "ar": "ساند بعضهم بعضاً في الأوقات الصعبة.",
+    "word": "supported",
+    "meaning": "ساندوا",
+    "options": ["ساندوا","نافسوا","لاموا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف التضامن بين الأصدقاء أو أفراد المجتمع."
   }
 ];
