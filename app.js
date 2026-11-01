@@ -81,4 +81,44 @@ function markQuizStreak(){if(state.lastQuizDate===todayKey)return;const yesterda
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installBtn").hidden=false;});
 $("installBtn").addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$("installBtn").hidden=true;});
 if("serviceWorker" in navigator&&location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error));}
+
+/* Main navigation drawer, first-visit welcome, and contact actions.
+   Authentication stays unavailable until a dedicated Jomlati auth provider is connected. */
+const VELORA_WHATSAPP_NUMBER = "";
+const menuToggle=$("menuToggle"),sideMenu=$("sideMenu"),menuScrim=$("menuScrim");
+function setMenuOpen(open){
+  sideMenu.classList.toggle("is-open",open);
+  menuScrim.hidden=!open;
+  requestAnimationFrame(()=>menuScrim.classList.toggle("is-visible",open));
+  sideMenu.setAttribute("aria-hidden",String(!open));
+  menuToggle.setAttribute("aria-expanded",String(open));
+  document.body.classList.toggle("menu-open",open);
+}
+function openInfoModal(id){$(id).hidden=false;}
+function closeInfoModal(id){$(id).hidden=true;}
+menuToggle.addEventListener("click",()=>setMenuOpen(!sideMenu.classList.contains("is-open")));
+$("menuClose").addEventListener("click",()=>setMenuOpen(false));
+menuScrim.addEventListener("click",()=>setMenuOpen(false));
+$("menuLoginButton").addEventListener("click",()=>{setMenuOpen(false);openInfoModal("loginModal");});
+$("menuWhatsAppButton").addEventListener("click",()=>{
+  setMenuOpen(false);
+  const number=VELORA_WHATSAPP_NUMBER.replace(/\\D/g,"");
+  if(number){window.open("https://wa.me/"+number,"_blank","noopener,noreferrer");}
+  else{openInfoModal("whatsappModal");}
+});
+$("menuSettingsButton").addEventListener("click",()=>{setMenuOpen(false);showPage("settings");window.scrollTo({top:0,behavior:"smooth"});});
+document.querySelectorAll("[data-close-modal]").forEach(button=>button.addEventListener("click",()=>closeInfoModal(button.dataset.closeModal)));
+["loginModal","whatsappModal"].forEach(id=>$(id).addEventListener("click",event=>{if(event.target===$(id))closeInfoModal(id);}));
+$("welcomeStart").addEventListener("click",()=>{
+  try{localStorage.setItem("jomlati-welcome-seen-v1","yes");}catch(error){console.warn("Welcome preference could not be saved",error);}
+  $("welcomeModal").hidden=true;
+});
+if(!localStorage.getItem("jomlati-welcome-seen-v1"))$("welcomeModal").hidden=false;
+document.addEventListener("keydown",event=>{
+  if(event.key==="Escape"){
+    setMenuOpen(false);
+    ["loginModal","whatsappModal"].forEach(closeInfoModal);
+  }
+});
+
 renderSentence();renderStats();checkReminder();setInterval(checkReminder,60000);
