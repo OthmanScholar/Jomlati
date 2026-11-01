@@ -22,6 +22,7 @@ let currentIndex = 0;
 let deferredPrompt = null;
 function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){console.warn("Could not save learning state",e);}renderStats();}
 function toast(msg){const el=$("toast");el.textContent=msg;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2300);}
+window.JomlatiToast = toast;
 const todayIndex = (()=>{const [y,m,d]=todayKey.split("-").map(Number);return Math.floor((Date.UTC(y,m-1,d)-Date.UTC(y,0,0))/86400000);})();
 function dailySentence(){
   const pool=sentences.filter(s=>s.level===state.level);
