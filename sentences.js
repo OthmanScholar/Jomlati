@@ -1,4 +1,4 @@
-/* 217 reviewed learning prompts for Jomlati MVP. */
+/* 237 reviewed learning prompts for Jomlati MVP. */
 const sentences = [
   {
     "en": "Good morning!",
@@ -3037,5 +3037,206 @@ const sentences = [
     "level": "متقدم",
     "category": "الحياة والتواصل الاجتماعي",
     "usage": "للحديث عن العادات التي تحافظ عليها الأسرة."
+  }
+,
+  {
+    "en": "We usually visit our grandparents on Fridays.",
+    "ar": "عادةً ما نزور جدّينا أيام الجمعة.",
+    "word": "usually",
+    "meaning": "عادةً",
+    "options": ["عادةً","نادراً","فوراً"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف عادة اجتماعية متكررة."
+  },
+  {
+    "en": "My neighbors are friendly and helpful.",
+    "ar": "جيراني ودودون ومتعاونون.",
+    "word": "neighbors",
+    "meaning": "الجيران",
+    "options": ["الجيران","الأقارب","الزملاء"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف العلاقة الطيبة مع الجيران."
+  },
+  {
+    "en": "We invited our friends to dinner.",
+    "ar": "دعونا أصدقاءنا إلى العشاء.",
+    "word": "invited",
+    "meaning": "دعونا",
+    "options": ["دعونا","قابلنا","ودّعنا"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن دعوة الأصدقاء إلى مناسبة."
+  },
+  {
+    "en": "She always remembers people's birthdays.",
+    "ar": "هي تتذكر أعياد ميلاد الناس دائماً.",
+    "word": "remembers",
+    "meaning": "تتذكر",
+    "options": ["تتذكر","تنسى","تحتفل"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف الاهتمام بالمناسبات الشخصية."
+  },
+  {
+    "en": "We shared stories around the table.",
+    "ar": "تبادلنا القصص حول المائدة.",
+    "word": "shared",
+    "meaning": "تبادلنا",
+    "options": ["تبادلنا","أخفينا","اختصرنا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف جلسة عائلية أو اجتماعية."
+  },
+  {
+    "en": "It is important to listen without interrupting.",
+    "ar": "من المهم أن نصغي دون مقاطعة.",
+    "word": "interrupting",
+    "meaning": "المقاطعة",
+    "options": ["المقاطعة","الابتسام","التأخر"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتأكيد على احترام المتحدث."
+  },
+  {
+    "en": "They welcomed the new family to the neighborhood.",
+    "ar": "رحبوا بالعائلة الجديدة في الحي.",
+    "word": "welcomed",
+    "meaning": "رحبوا",
+    "options": ["رحبوا","تجاهلوا","غادروا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف حسن استقبال الجيران الجدد."
+  },
+  {
+    "en": "We take turns preparing the family meal.",
+    "ar": "نتناوب على إعداد وجبة العائلة.",
+    "word": "take turns",
+    "meaning": "نتناوب",
+    "options": ["نتناوب","نتنافس","نتوقف"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف تقاسم المسؤوليات داخل الأسرة."
+  },
+  {
+    "en": "A small gesture can make someone's day.",
+    "ar": "لفتة بسيطة قد تجعل يوم شخص ما أجمل.",
+    "word": "gesture",
+    "meaning": "لفتة",
+    "options": ["لفتة","مشكلة","قاعدة"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن أثر التصرفات اللطيفة."
+  },
+  {
+    "en": "We try to stay in touch with distant relatives.",
+    "ar": "نحاول البقاء على تواصل مع الأقارب البعيدين.",
+    "word": "stay in touch",
+    "meaning": "نبقى على تواصل",
+    "options": ["نبقى على تواصل","نختلف باستمرار","نلتقي يومياً"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن الحفاظ على صلة الأقارب رغم المسافة."
+  },
+  {
+    "en": "He apologized for arriving late.",
+    "ar": "اعتذر عن وصوله متأخراً.",
+    "word": "apologized",
+    "meaning": "اعتذر",
+    "options": ["اعتذر","احتفل","وافق"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن الاعتذار في موقف اجتماعي."
+  },
+  {
+    "en": "Good friendships require honesty and respect.",
+    "ar": "تتطلب الصداقات الجيدة الصدق والاحترام.",
+    "word": "honesty",
+    "meaning": "الصدق",
+    "options": ["الصدق","الشهرة","السرعة"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف أسس الصداقة المتينة."
+  },
+  {
+    "en": "The community organized a charity event.",
+    "ar": "نظم المجتمع فعالية خيرية.",
+    "word": "charity",
+    "meaning": "العمل الخيري",
+    "options": ["العمل الخيري","العمل التجاري","العمل المنزلي"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن المبادرات المجتمعية."
+  },
+  {
+    "en": "We offered to help our elderly neighbor.",
+    "ar": "عرضنا مساعدة جارنا المسن.",
+    "word": "offered",
+    "meaning": "عرضنا",
+    "options": ["عرضنا","رفضنا","طلبنا"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف المبادرة إلى مساعدة الآخرين."
+  },
+  {
+    "en": "Please let me know if you need anything.",
+    "ar": "أرجو أن تخبرني إذا احتجت إلى أي شيء.",
+    "word": "need",
+    "meaning": "تحتاج",
+    "options": ["تحتاج","تتذكر","تغادر"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "عبارة مهذبة لعرض المساعدة."
+  },
+  {
+    "en": "They planned a reunion after many years apart.",
+    "ar": "خططوا للقاء لمّ الشمل بعد سنوات طويلة من الفراق.",
+    "word": "reunion",
+    "meaning": "لقاء لمّ الشمل",
+    "options": ["لقاء لمّ الشمل","رحلة عمل","مباراة"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن اجتماع الأصدقاء أو أفراد العائلة بعد غياب."
+  },
+  {
+    "en": "Respecting different opinions helps avoid arguments.",
+    "ar": "يساعد احترام الآراء المختلفة على تجنب الجدال.",
+    "word": "opinions",
+    "meaning": "الآراء",
+    "options": ["الآراء","الهدايا","العناوين"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للتعبير عن أهمية تقبل وجهات النظر."
+  },
+  {
+    "en": "She keeps in contact with her former classmates.",
+    "ar": "تحافظ على التواصل مع زملائها السابقين في الدراسة.",
+    "word": "former",
+    "meaning": "السابقين",
+    "options": ["السابقين","الجدد","الصغار"],
+    "level": "متوسط",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف استمرار التواصل بعد انتهاء الدراسة."
+  },
+  {
+    "en": "We celebrated the good news together.",
+    "ar": "احتفلنا بالخبر السار معاً.",
+    "word": "celebrated",
+    "meaning": "احتفلنا",
+    "options": ["احتفلنا","ناقشنا","أخفينا"],
+    "level": "مبتدئ",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "لوصف مشاركة الآخرين لحظات الفرح."
+  },
+  {
+    "en": "Volunteering brings people closer together.",
+    "ar": "يجعل العمل التطوعي الناس أكثر تقارباً.",
+    "word": "volunteering",
+    "meaning": "العمل التطوعي",
+    "options": ["العمل التطوعي","التسوق","السفر"],
+    "level": "متقدم",
+    "category": "الحياة والتواصل الاجتماعي",
+    "usage": "للحديث عن دور التطوع في تقوية الروابط المجتمعية."
   }
 ];
