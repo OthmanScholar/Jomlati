@@ -1,5 +1,5 @@
 /* 365 reviewed learning prompts for Jomlati MVP. */
-const sentences = [
+const defaultSentences = [
   {
     "en": "Good morning!",
     "ar": "صباح الخير!",
@@ -4528,3 +4528,6 @@ const sentences = [
     "usage": "للحديث عن نتيجة النجاح في مساق جامعي."
   }
 ];
+
+// Expose the reviewed offline library for the Firebase-backed admin tools.
+window.JOMLATI_SENTENCES = defaultSentences;
